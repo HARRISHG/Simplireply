@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free WhatsApp appointment reminders for clinics | Simplireply</title>
+<meta name="description" content="Get one WhatsApp appointment reminder workflow set up free: confirmations, reminders and rescheduling for your clinic.">
+<meta name="theme-color" content="#127A5E">
+<link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+:root{--surface:#FFFFFF;--mist:#EAF4EF;--line:#DCE5E1;--ink:#0F201B;--ink-muted:#5A6B65;--jade:#127A5E;--on-jade:#FFFFFF;--jade-light:#D9F5EA;--coral:#FF6B4A;--jade-100:#E7F2EF;--jade-200:#C4DED7;--jade-300:#88BCAE;--jade-700:#0D5542;--jade-900:#08372A}
+.page{background:var(--surface);color:var(--ink);font-family:'Manrope','Segoe UI',system-ui,sans-serif;font-weight:500;font-size:16px;line-height:26px;-webkit-font-smoothing:antialiased}
+.page *{box-sizing:border-box}
+.page h1,.page h2,.page h3,.page p,.page ul{margin:0;padding:0}
+.page ul{list-style:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.nav-links{display:flex;gap:32px}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px}
+.nav-links a:hover{color:var(--jade)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:inherit;font-weight:800;font-size:16px;line-height:24px;padding:12px 24px;min-height:48px;border-radius:12px;text-decoration:none;cursor:pointer}
+.btn-sm{min-height:44px;padding:10px 18px;font-size:15px}
+.btn-p{background:var(--jade);color:var(--on-jade)}
+.btn-p:hover{background:var(--jade-700)}
+.btn-w{background:#FFFFFF;color:var(--jade-900)}
+.btn-w:hover{background:var(--jade-light)}
+.btn:focus-visible,a:focus-visible{outline:0;box-shadow:0 0 0 2px #FFFFFF,0 0 0 4px #127A5E}
+.label{font-weight:800;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
+.h1{font-weight:800;font-size:clamp(36px,5vw,56px);line-height:1.08;letter-spacing:-.025em}
+.h2{font-weight:800;font-size:clamp(28px,3.6vw,42px);line-height:1.12;letter-spacing:-.02em}
+.muted{color:var(--ink-muted)}
+.sec{padding:96px 0}
+.center{text-align:center}
+.pill{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--surface);border-radius:9999px;padding:6px 16px 6px 12px;font-weight:700;font-size:14px;line-height:22px}
+.dot{width:8px;height:8px;border-radius:9999px;background:var(--coral);display:block}
+.split{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:64px;align-items:center}
+.frame{border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden}
+.bar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--line)}
+.bar b{font-weight:800;font-size:14px}
+.bar span{font-size:12px;color:var(--ink-muted);font-weight:700}
+.chat{background:var(--mist);padding:20px;display:flex;flex-direction:column;gap:12px}
+.b{max-width:94%;padding:10px 14px;border-radius:12px;font-size:15px;line-height:22px}
+.out{align-self:flex-end;background:var(--jade);color:var(--on-jade);border-bottom-right-radius:0}
+.qrs{display:flex;flex-wrap:wrap;gap:8px;align-self:flex-end}
+.qr{font-weight:800;font-size:14px;line-height:22px;color:var(--jade);background:var(--surface);box-shadow:inset 0 0 0 2px var(--jade);border-radius:8px;padding:6px 14px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:48px}
+.tile{background:var(--mist);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:16px}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--surface);display:flex;align-items:center;justify-content:center}
+.tile p{font-weight:800;font-size:18px;line-height:26px}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:48px}
+.step{border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.num{font-weight:800;font-size:32px;line-height:40px;color:var(--jade)}
+.step p{font-size:16px;line-height:24px;font-weight:700}
+.cta{background:var(--jade-900);color:#FFFFFF;border-radius:24px;padding:72px 48px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px}
+.cta p.sub{max-width:620px;color:var(--jade-light)}
+.foot{border-top:1px solid var(--line);padding:40px 0}
+.foot-in{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+.foot a{color:var(--ink-muted);text-decoration:none;font-weight:700;font-size:15px}
+.foot a:hover{color:var(--jade)}
+@media (max-width:900px){
+.split{grid-template-columns:minmax(0,1fr);gap:40px}
+.grid4,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sec{padding:72px 0}
+}
+@media (max-width:600px){
+.grid4,.steps{grid-template-columns:minmax(0,1fr)}
+.nav-in{height:auto;flex-wrap:wrap;padding:12px 0;row-gap:8px}.nav-links{order:3;width:100%;overflow-x:auto;gap:20px;padding-bottom:4px}.nav-links a{white-space:nowrap}
+.cta{padding:48px 24px}
+.btn{width:100%}
+.btn-sm{width:auto}
+}
+
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%}
+@media (max-width:900px){.mock-grid .chat{border-right:0!important;border-bottom:1px solid var(--line)}}
+@media (max-width:600px){.price{font-size:44px;line-height:48px}.page .h1{font-size:34px}.wrap{padding:0 20px}.li{align-items:flex-start}.bar{padding:12px 16px}.chat{padding:16px}.b{max-width:94%}.part{width:100%}}
+</style>
+
+</head>
+<body>
+
+<div class="page">
+
+<header class="nav">
+<div class="wrap nav-in">
+<a href="index.html" aria-label="Simplireply home"><img src="assets/logo.svg" alt="simplireply" style="height: 30px; display: block"></a>
+<nav class="nav-links" aria-label="Main">
+<a href="index.html">Home</a>
+<a href="how-it-works.html">How it works</a>
+<a href="clinics.html">Clinics</a>
+<a href="pricing.html">Pricing &amp; FAQ</a>
+</nav>
+<a class="btn btn-p btn-sm" href="free-setup.html">Get free setup</a>
+</div>
+</header>
+
+<main>
+
+<section class="sec" style="padding-bottom: 24px">
+<div class="wrap">
+<div class="split">
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px">
+<span class="pill"><i class="dot"></i>Free WhatsApp appointment reminder automation</span>
+<h1 class="h1">Let WhatsApp remind your patients about their appointments.</h1>
+<p class="muted" style="font-size: 20px; line-height: 30px">Your clinic shouldn't have to depend on manual calls and messages to remind every patient. Simplireply helps clinics automate appointment confirmations and reminders through WhatsApp.</p>
+<div style="display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 420px">
+<a class="btn btn-p" href="https://calendly.com/harrish-simplireply/30min">Get your free setup<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 8L5 12.5 10 17M5 12.5h9a5 5 0 0 1 5 5v1"></path></svg></a>
+<p style="font-size: 14px; line-height: 22px; color: #5A6B65">We'll configure one appointment reminder workflow for your clinic.</p>
+</div>
+</div>
+<div class="frame">
+<div class="bar"><b>Appointment</b><span>Sample</span></div>
+<div class="chat">
+<div style="background: #FFFFFF; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 4px">
+<span class="label">Booking confirmed</span>
+<span style="font-weight: 800; font-size: 22px; line-height: 30px">Thursday, 6:30 pm</span>
+<span class="muted" style="font-size: 15px">Consultation with Dr. Priya</span>
+</div>
+<div class="out b">Hello Priya, your appointment at Sunrise Dental is confirmed for Thursday, 6:30 pm.</div>
+<div class="out b">Reminder: your appointment is today at 6:30 pm. Please confirm or reschedule.</div>
+<div class="qrs"><span class="qr">Confirm</span><span class="qr">Reschedule</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" style="padding-top: 48px">
+<div class="wrap">
+<div class="center" style="display: flex; flex-direction: column; align-items: center; gap: 16px; max-width: 700px; margin: 0 auto">
+<p class="label">Your free setup</p>
+<h2 class="h2">You'll receive</h2>
+</div>
+<div class="grid4">
+<div class="tile"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M9 15l2 2 4-4"></path></svg></div><p>Appointment confirmation messages</p></div>
+<div class="tile"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4zM10 21h4"></path></svg></div><p>Automated reminder messages</p></div>
+<div class="tile"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3L20 9M20 4v5h-5M20 12a8 8 0 0 1-14 5.3L4 15M4 20v-5h5"></path></svg></div><p>Patient rescheduling communication</p></div>
+<div class="tile"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></div><p>WhatsApp automation setup</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec" style="background: #EAF4EF">
+<div class="wrap">
+<div class="center" style="display: flex; flex-direction: column; align-items: center; gap: 16px; max-width: 700px; margin: 0 auto">
+<p class="label">How it works</p>
+<h2 class="h2">Four simple steps.</h2>
+</div>
+<div class="steps">
+<div class="step" style="background: #FFFFFF"><span class="num">1</span><p>Your clinic records an appointment.</p></div>
+<div class="step" style="background: #FFFFFF"><span class="num">2</span><p>The patient receives a WhatsApp confirmation.</p></div>
+<div class="step" style="background: #FFFFFF"><span class="num">3</span><p>The patient receives a timely reminder.</p></div>
+<div class="step" style="background: #FFFFFF"><span class="num">4</span><p>The clinic can manage confirmation and rescheduling responses.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap">
+<div class="cta">
+<h2 class="h2" style="max-width: 700px">Claim your free setup.</h2>
+<p class="sub" style="font-size: 18px; line-height: 28px">Let us demonstrate how WhatsApp appointment reminders can simplify your clinic's communication.</p>
+<a class="btn btn-w" href="https://calendly.com/harrish-simplireply/30min">Get my free setup<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#08372A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 8L5 12.5 10 17M5 12.5h9a5 5 0 0 1 5 5v1"></path></svg></a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="foot">
+<div class="wrap foot-in">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 360px">
+<img src="assets/logo.svg" alt="simplireply" style="height: 28px; width: 150px; object-fit: contain; object-position: left; display: block">
+<p class="muted" style="font-size: 15px; line-height: 24px">Managed WhatsApp communication for clinics.</p>
+</div>
+<nav style="display: flex; flex-wrap: wrap; gap: 28px" aria-label="Footer">
+<a href="index.html">Home</a>
+<a href="how-it-works.html">How it works</a>
+<a href="clinics.html">Clinics</a>
+<a href="pricing.html">Pricing &amp; FAQ</a>
+<a href="free-setup.html">Free setup</a>
+<a href="audit.html">Free audit</a>
+<a href="mailto:harrish@simplireply.com">harrish@simplireply.com</a>
+</nav>
+</div>
+<div class="wrap" style="margin-top: 32px">
+<p class="muted" style="font-size: 14px; line-height: 22px">© 2026 Simplireply. All rights reserved.</p>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>

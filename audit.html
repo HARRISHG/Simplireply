@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free clinic enquiry audit | Simplireply</title>
+<meta name="description" content="Find out where your clinic may be losing potential appointments and how structured WhatsApp follow-ups can help.">
+<meta name="theme-color" content="#127A5E">
+<link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+:root{--surface:#FFFFFF;--mist:#EAF4EF;--line:#DCE5E1;--ink:#0F201B;--ink-muted:#5A6B65;--jade:#127A5E;--on-jade:#FFFFFF;--jade-light:#D9F5EA;--coral:#FF6B4A;--jade-100:#E7F2EF;--jade-200:#C4DED7;--jade-300:#88BCAE;--jade-700:#0D5542;--jade-900:#08372A}
+.page{background:var(--surface);color:var(--ink);font-family:'Manrope','Segoe UI',system-ui,sans-serif;font-weight:500;font-size:16px;line-height:26px;-webkit-font-smoothing:antialiased}
+.page *{box-sizing:border-box}
+.page h1,.page h2,.page h3,.page p,.page ul{margin:0;padding:0}
+.page ul{list-style:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.nav-links{display:flex;gap:32px}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px}
+.nav-links a:hover{color:var(--jade)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:inherit;font-weight:800;font-size:16px;line-height:24px;padding:12px 24px;min-height:48px;border-radius:12px;text-decoration:none;cursor:pointer}
+.btn-sm{min-height:44px;padding:10px 18px;font-size:15px}
+.btn-p{background:var(--jade);color:var(--on-jade)}
+.btn-p:hover{background:var(--jade-700)}
+.btn-s{background:var(--surface);color:var(--jade);box-shadow:inset 0 0 0 2px var(--jade)}
+.btn-s:hover{background:var(--jade-100)}
+.btn:focus-visible,a:focus-visible{outline:0;box-shadow:0 0 0 2px #FFFFFF,0 0 0 4px #127A5E}
+.label{font-weight:800;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
+.h1{font-weight:800;font-size:clamp(36px,5vw,56px);line-height:1.08;letter-spacing:-.025em}
+.h2{font-weight:800;font-size:clamp(28px,3.6vw,42px);line-height:1.12;letter-spacing:-.02em}
+.muted{color:var(--ink-muted)}
+.sec{padding:96px 0}
+.split{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:64px;align-items:start}
+.get{display:flex;flex-direction:column;gap:20px;margin-top:8px}
+.get li{display:flex;gap:16px;align-items:flex-start}
+.get .n{flex:none;width:40px;height:40px;border-radius:9999px;background:var(--jade);color:var(--on-jade);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px}
+.get b{display:block;font-weight:800;font-size:20px;line-height:28px}
+.get span.t{color:var(--ink-muted)}
+.book{background:var(--mist);border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:20px}
+.book h2{font-weight:800;font-size:28px;line-height:34px;letter-spacing:-.015em}
+.book .pts{display:flex;flex-direction:column;gap:10px}
+.book .pts li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15px;line-height:22px}
+.book .pts svg{flex:none;margin-top:1px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.step{border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.num{font-weight:800;font-size:32px;line-height:40px;color:var(--jade)}
+.step h3{font-weight:800;font-size:20px;line-height:28px}
+.step p{font-size:15px;line-height:24px;color:var(--ink-muted)}
+.foot{border-top:1px solid var(--line);padding:40px 0}
+.foot-in{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+.foot a{color:var(--ink-muted);text-decoration:none;font-weight:700;font-size:15px}
+.foot a:hover{color:var(--jade)}
+@media (max-width:900px){
+.split{grid-template-columns:minmax(0,1fr);gap:40px}
+.steps{grid-template-columns:minmax(0,1fr)}
+.sec{padding:72px 0}
+}
+@media (max-width:600px){
+.book{padding:28px 24px}
+.nav-in{height:auto;flex-wrap:wrap;padding:12px 0;row-gap:8px}.nav-links{order:3;width:100%;overflow-x:auto;gap:20px;padding-bottom:4px}.nav-links a{white-space:nowrap}
+.btn{width:100%}
+.btn-sm{width:auto}
+}
+
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%}
+@media (max-width:900px){.mock-grid .chat{border-right:0!important;border-bottom:1px solid var(--line)}}
+@media (max-width:600px){.price{font-size:44px;line-height:48px}.page .h1{font-size:34px}.wrap{padding:0 20px}.li{align-items:flex-start}.bar{padding:12px 16px}.chat{padding:16px}.b{max-width:94%}.part{width:100%}}
+</style>
+
+</head>
+<body>
+
+<div class="page">
+
+<header class="nav">
+<div class="wrap nav-in">
+<a href="index.html" aria-label="Simplireply home"><img src="assets/logo.svg" alt="simplireply" style="height: 30px; display: block"></a>
+<nav class="nav-links" aria-label="Main">
+<a href="index.html">Home</a>
+<a href="how-it-works.html">How it works</a>
+<a href="clinics.html">Clinics</a>
+<a href="pricing.html">Pricing &amp; FAQ</a>
+</nav>
+<a class="btn btn-p btn-sm" href="free-setup.html">Get free setup</a>
+</div>
+</header>
+
+<main>
+
+<section class="sec" style="padding-bottom: 48px">
+<div class="wrap">
+<div class="split">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<p class="label">Free clinic enquiry audit</p>
+<h1 class="h1">Find out where your clinic is losing patients.</h1>
+<p class="muted" style="font-size: 20px; line-height: 30px">Understand where you may be losing potential appointments, and how a structured WhatsApp follow-up system can help.</p>
+<ul class="get">
+<li><span class="n">1</span><div><b>How enquiries are handled today</b><span class="t">We look at how patient enquiries reach your clinic and who replies.</span></div></li>
+<li><span class="n">2</span><div><b>Where appointments slip away</b><span class="t">We point out missed replies, gaps in follow-up and forgotten enquiries.</span></div></li>
+<li><span class="n">3</span><div><b>What a better system looks like</b><span class="t">We show how structured WhatsApp follow-ups could work for your clinic.</span></div></li>
+</ul>
+</div>
+<div class="book">
+<p class="label">Request your free audit</p>
+<h2>Book a call with us.</h2>
+<ul class="pts">
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Free, with no obligation</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>No new software to learn</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Clinical conversations stay with your team</li>
+</ul>
+<a class="btn btn-p" href="https://calendly.com/harrish-simplireply/30min">Request your free audit<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 8L5 12.5 10 17M5 12.5h9a5 5 0 0 1 5 5v1"></path></svg></a>
+<a class="btn btn-s" href="mailto:harrish@simplireply.com">Email us instead</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" style="padding-top: 24px">
+<div class="wrap">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<p class="label">What happens next</p>
+<h2 class="h2">Three simple steps.</h2>
+</div>
+<div class="steps">
+<div class="step"><span class="num">1</span><h3>You book</h3><p>Pick a time that suits you and your team.</p></div>
+<div class="step"><span class="num">2</span><h3>We review</h3><p>We look at how your clinic handles enquiries today.</p></div>
+<div class="step"><span class="num">3</span><h3>You decide</h3><p>You see where appointments are slipping, then choose what to do next.</p></div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="foot">
+<div class="wrap foot-in">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 360px">
+<img src="assets/logo.svg" alt="simplireply" style="height: 28px; width: 150px; object-fit: contain; object-position: left; display: block">
+<p class="muted" style="font-size: 15px; line-height: 24px">Managed WhatsApp enquiry follow-ups for clinics.</p>
+</div>
+<nav style="display: flex; flex-wrap: wrap; gap: 28px" aria-label="Footer">
+<a href="index.html">Home</a>
+<a href="how-it-works.html">How it works</a>
+<a href="clinics.html">Clinics</a>
+<a href="pricing.html">Pricing &amp; FAQ</a>
+<a href="free-setup.html">Free setup</a>
+<a href="audit.html">Free audit</a>
+<a href="mailto:harrish@simplireply.com">harrish@simplireply.com</a>
+</nav>
+</div>
+<div class="wrap" style="margin-top: 32px">
+<p class="muted" style="font-size: 14px; line-height: 22px">© 2026 Simplireply. All rights reserved.</p>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simplireply for dental, skin, eye, physio and IVF clinics</title>
+<meta name="description" content="WhatsApp enquiry follow-up for appointment-driven clinics.">
+<meta name="theme-color" content="#127A5E">
+<link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+:root{--surface:#FFFFFF;--mist:#EAF4EF;--line:#DCE5E1;--ink:#0F201B;--ink-muted:#5A6B65;--jade:#127A5E;--on-jade:#FFFFFF;--jade-light:#D9F5EA;--coral:#FF6B4A;--jade-100:#E7F2EF;--jade-200:#C4DED7;--jade-300:#88BCAE;--jade-700:#0D5542;--jade-900:#08372A}
+.page{background:var(--surface);color:var(--ink);font-family:'Manrope','Segoe UI',system-ui,sans-serif;font-weight:500;font-size:16px;line-height:26px;-webkit-font-smoothing:antialiased}
+.page *{box-sizing:border-box}
+.page h1,.page h2,.page h3,.page p,.page ul{margin:0;padding:0}
+.page ul{list-style:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.nav-links{display:flex;gap:32px}
+.nav-links a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px}
+.nav-links a:hover{color:var(--jade)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:inherit;font-weight:800;font-size:16px;line-height:24px;padding:12px 24px;min-height:48px;border-radius:12px;text-decoration:none;cursor:pointer}
+.btn-sm{min-height:44px;padding:10px 18px;font-size:15px}
+.btn-p{background:var(--jade);color:var(--on-jade)}
+.btn-p:hover{background:var(--jade-700)}
+.btn-w{background:#FFFFFF;color:var(--jade-900)}
+.btn-w:hover{background:var(--jade-light)}
+.btn:focus-visible,a:focus-visible{outline:0;box-shadow:0 0 0 2px #FFFFFF,0 0 0 4px #127A5E}
+.label{font-weight:800;font-size:12px;line-height:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
+.h1{font-weight:800;font-size:clamp(36px,5vw,56px);line-height:1.08;letter-spacing:-.025em}
+.h2{font-weight:800;font-size:clamp(28px,3.6vw,42px);line-height:1.12;letter-spacing:-.02em}
+.muted{color:var(--ink-muted)}
+.sec{padding:96px 0}
+.center{text-align:center}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:var(--mist);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.card h3{font-weight:800;font-size:22px;line-height:30px;margin:0}
+.card hr{border:0;border-top:1px solid var(--jade-200);width:100%;margin:2px 0}
+.card .do{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15px;line-height:24px}
+.card .do svg{flex:none;margin-top:3px}
+.src{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:40px}
+.tile{border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;font-weight:800;font-size:18px}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--mist);display:flex;align-items:center;justify-content:center}
+.cta{background:var(--jade-900);color:#FFFFFF;border-radius:24px;padding:72px 48px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px}
+.cta p.sub{max-width:600px;color:var(--jade-light)}
+.foot{border-top:1px solid var(--line);padding:40px 0}
+.foot-in{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+.foot a{color:var(--ink-muted);text-decoration:none;font-weight:700;font-size:15px}
+.foot a:hover{color:var(--jade)}
+@media (max-width:900px){
+.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+.src{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sec{padding:72px 0}
+}
+@media (max-width:600px){
+.grid3,.src{grid-template-columns:minmax(0,1fr)}
+.nav-in{height:auto;flex-wrap:wrap;padding:12px 0;row-gap:8px}.nav-links{order:3;width:100%;overflow-x:auto;gap:20px;padding-bottom:4px}.nav-links a{white-space:nowrap}
+.cta{padding:48px 24px}
+.btn{width:100%}
+.btn-sm{width:auto}
+}
+
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%}
+@media (max-width:900px){.mock-grid .chat{border-right:0!important;border-bottom:1px solid var(--line)}}
+@media (max-width:600px){.price{font-size:44px;line-height:48px}.page .h1{font-size:34px}.wrap{padding:0 20px}.li{align-items:flex-start}.bar{padding:12px 16px}.chat{padding:16px}.b{max-width:94%}.part{width:100%}}
+</style>
+
+</head>
+<body>
+
+<div class="page">
+
+<header class="nav">
+<div class="wrap nav-in">
+<a href="index.html" aria-label="Simplireply home"><img src="assets/logo.svg" alt="simplireply" style="height: 30px; display: block"></a>
+<nav class="nav-links" aria-label="Main">
+<a href="index.html">Home</a>
+<a href="how-it-works.html">How it works</a>
+<a href="clinics.html" style="color: #127A5E">Clinics</a>
+<a href="pricing.html">Pricing &amp; FAQ</a>
+</nav>
+<a class="btn btn-p btn-sm" href="free-setup.html">Get free setup</a>
+</div>
+</header>
+
+<main>
+
+<section style="padding: 72px 0 24px">
+<div class="wrap center" style="display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 800px">
+<p class="label">Clinics</p>
+<h1 class="h1">Built for appointment-driven clinics.</h1>
+<p class="muted" style="font-size: 20px; line-height: 30px; max-width: 620px">Whatever your speciality, patients enquire first and book later. Simplireply makes sure they get followed up.</p>
+</div>
+</section>
+
+<section class="sec" style="padding-top: 48px">
+<div class="wrap">
+<div class="grid3">
+<div class="card">
+<p class="label">Dental clinics</p>
+<h3>Patients ask about braces or whitening, then go quiet.</h3>
+<hr>
+<p class="do"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>We follow up until they book.</p>
+</div>
+<div class="card">
+<p class="label">Dermatology clinics</p>
+<h3>Enquiries from ads and Instagram wait too long for a reply.</h3>
+<hr>
+<p class="do"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>We reply fast and guide them to a consultation.</p>
+</div>
+<div class="card">
+<p class="label">Eye clinics</p>
+<h3>Check-ups get forgotten between visits.</h3>
+<hr>
+<p class="do"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>We send reminders and bring old enquiries back.</p>
+</div>
+<div class="card">
+<p class="label">Physiotherapy centres</p>
+<h3>Patients drop off between sessions.</h3>
+<hr>
+<p class="do"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>We remind them and make rescheduling easy.</p>
+</div>
+<div class="card">
+<p class="label">IVF centres</p>
+<h3>Enquiries need prompt, careful answers to simple questions.</h3>
+<hr>
+<p class="do"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>We handle the admin follow-up. Clinical talk stays with your team.</p>
+</div>
+<div class="card">
+<p class="label">Multi-specialty clinics</p>
+<h3>Many departments, many places enquiries come from.</h3>
+<hr>
+<p class="do"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>We keep every enquiry in one tracked place.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" style="background: #EAF4EF">
+<div class="wrap">
+<div class="center" style="display: flex; flex-direction: column; align-items: center; gap: 16px; max-width: 700px; margin: 0 auto">
+<p class="label">Where enquiries come from</p>
+<h2 class="h2">Patients reach you everywhere. We follow up on WhatsApp.</h2>
+</div>
+<div class="src">
+<div class="tile" style="background: #FFFFFF"><span class="ico" style="background: #EAF4EF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></span>WhatsApp</div>
+<div class="tile" style="background: #FFFFFF"><span class="ico" style="background: #EAF4EF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg></span>Phone calls</div>
+<div class="tile" style="background: #FFFFFF"><span class="ico" style="background: #EAF4EF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"></rect><circle cx="12" cy="12" r="3.5"></circle></svg></span>Instagram</div>
+<div class="tile" style="background: #FFFFFF"><span class="ico" style="background: #EAF4EF"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13V9l12-5v16L4 15zM8 15l1 5h3l-1-4.5"></path></svg></span>Ads</div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap">
+<div class="cta">
+<h2 class="h2" style="max-width: 700px">Not sure where your clinic is losing patients?</h2>
+<p class="sub" style="font-size: 18px; line-height: 28px">The free audit shows where enquiries slip away.</p>
+<a class="btn btn-w" href="audit.html">Get your free clinic enquiry audit</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="foot">
+<div class="wrap foot-in">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 360px">
+<img src="assets/logo.svg" alt="simplireply" style="height: 28px; width: 150px; object-fit: contain; object-position: left; display: block">
+<p class="muted" style="font-size: 15px; line-height: 24px">Managed WhatsApp enquiry follow-ups for clinics.</p>
+</div>
+<nav style="display: flex; flex-wrap: wrap; gap: 28px" aria-label="Footer">
+<a href="index.html">Home</a>
+<a href="how-it-works.html">How it works</a>
+<a href="clinics.html">Clinics</a>
+<a href="pricing.html">Pricing &amp; FAQ</a>
+<a href="free-setup.html">Free setup</a>
+<a href="audit.html">Free audit</a>
+<a href="mailto:harrish@simplireply.com">harrish@simplireply.com</a>
+</nav>
+</div>
+<div class="wrap" style="margin-top: 32px">
+<p class="muted" style="font-size: 14px; line-height: 22px">© 2026 Simplireply. All rights reserved.</p>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
