@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simplireply for doctors — Every patient enquiry answered in seconds | WhatsApp follow-up</title>
+<meta name="description" content="A done-for-you WhatsApp front desk for doctors and clinics. We reply to every patient enquiry in seconds, remind appointments and follow-up visits, and follow up till patients book. Free forever plan.">
+<meta name="theme-color" content="#F6F5F3">
+<link rel="canonical" href="https://simplireply.com/doctors/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://simplireply.com/doctors/">
+<meta property="og:title" content="Simplireply for doctors — Every patient enquiry answered in seconds">
+<meta property="og:description" content="Done-for-you WhatsApp follow-up for doctors and clinics. Free forever plan.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cpath%20d%3D%22M14%206h36a10%2010%200%200%201%2010%2010v24a10%2010%200%200%201-10%2010H30L17%2059V50h-3A10%2010%200%200%201%204%2040V16A10%2010%200%200%201%2014%206z%22%20fill%3D%22%23127A5E%22/%3E%3Cpath%20d%3D%22M44%2038v-2a9%209%200%200%200-9-9H19%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M26%2019l-8%208%208%208%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Ccircle%20cx%3D%2246%22%20cy%3D%2216%22%20r%3D%225%22%20fill%3D%22%23FF6B4A%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Simplireply","url":"https://simplireply.com/","email":"harrish@simplireply.com","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressCountry":"IN"}}</script>
+<style>
+body{margin:0;background:#F6F5F3}
+a{color:#127A5E}a:hover{color:#0D5542}
+.btn-k:hover{background:#2A3A35 !important}
+.box:hover{border-color:#127A5E !important}
+.lnk:hover{color:#0F201B !important}
+a:focus-visible,summary:focus-visible{outline:none;box-shadow:0 0 0 2px #F6F5F3,0 0 0 4px #127A5E}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+details[open] .chev{transform:rotate(45deg)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px);filter:blur(6px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes dash{to{stroke-dashoffset:-560}}
+@keyframes chat{0%,4%{opacity:0;transform:translateY(10px)}12%,86%{opacity:1;transform:none}96%,100%{opacity:0;transform:translateY(-6px)}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes nudge{0%,60%,100%{transform:translateX(0)}30%{transform:translateX(4px)}}
+@keyframes ping{0%{transform:scale(1);opacity:.55}100%{transform:scale(2.8);opacity:0}}
+@keyframes underline{from{background-size:0% 6px}to{background-size:100% 6px}}
+@keyframes breathe{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:.9;transform:scale(1.08)}}
+.in{animation:fadeUp 1.4s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.2s}.d2{animation-delay:.45s}.d3{animation-delay:.7s}.d4{animation-delay:.95s}.d5{animation-delay:1.2s}.d6{animation-delay:1.45s}
+.flow path{stroke-dasharray:3 9;animation:dash 40s linear infinite}
+.glow{animation:breathe 9s ease-in-out infinite}
+.uline{background-image:linear-gradient(#D9F5EA,#D9F5EA);background-repeat:no-repeat;background-position:0 88%;background-size:0% 6px;animation:underline 1.6s cubic-bezier(.2,.7,.2,1) 1.6s forwards}
+.b1,.b2,.b3,.b4{animation:chat 12s ease-in-out infinite both}
+.b2{animation-delay:1.4s}.b3{animation-delay:2.6s}.b4{animation-delay:3.2s}
+.bar{transform-origin:left;transform:scaleX(0);transition:transform 2.4s cubic-bezier(.2,.7,.2,1) .5s}
+.shown .bar,.bar.shown{transform:scaleX(1)}
+.bob{animation:bob 4.5s ease-in-out infinite}
+.nudge{animation:nudge 3s ease-in-out infinite}
+.ping{animation:ping 2.4s ease-out infinite}
+.anim-on .reveal{opacity:0;transform:translateY(36px);filter:blur(4px);transition:opacity 1.3s ease,transform 1.3s cubic-bezier(.2,.7,.2,1),filter 1.3s ease,box-shadow .6s}
+.anim-on .reveal.shown{opacity:1;transform:none;filter:blur(0)}
+.card:hover{box-shadow:0 10px 28px rgba(15,32,27,0.10) !important}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}.anim-on .reveal,.bar{opacity:1 !important;transform:none !important;filter:none !important}}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Geist,'Segoe UI',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}
+section{scroll-margin-top:72px}
+.skip{position:absolute;left:-9999px;top:8px;background:#0F201B;color:#fff;padding:10px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+@media (max-width:720px){
+ .nav-hide{display:none !important}
+ .hide-sm{display:none}
+ .step{padding:22px !important;gap:20px !important}
+ .card:not(.nopad){padding:22px !important}
+ section > div{padding-left:18px !important;padding-right:18px !important}
+ #top > div:not(.glow){padding-top:44px !important;padding-bottom:56px !important}
+ .glow{width:360px !important;margin-left:-180px !important}
+ .fab{right:16px !important;bottom:16px !important;width:52px !important;height:52px !important}
+ .box span:first-child{font-size:15px !important}
+ .report > div,.offer .tile{flex:1 1 calc(50% - 5px) !important;min-width:0}
+ .offer{gap:18px !important}
+ .offer .sep{display:none}
+ .offer a{align-self:stretch !important;justify-content:center}
+}
+@media (max-width:420px){
+ header img{height:22px !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sr-root" style="width: 100%; font-family: Geist, 'Segoe UI', system-ui, sans-serif; color: #0F201B; background: #F6F5F3; font-weight: 400; position: relative; overflow: hidden">
+
+<!-- NAV -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(246,245,243,0.92)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="#top" aria-label="Simplireply home" style="display: flex; align-items: center"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MjYgODgiIHdpZHRoPSI2MjYiIGhlaWdodD0iODgiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ic2ltcGxpcmVwbHkiPjx0aXRsZT5zaW1wbGlyZXBseTwvdGl0bGU+PGcgdHJhbnNmb3JtPSJzY2FsZSgxLjM3NSkiPjxwYXRoIGQ9Ik0xNCA2aDM2YTEwIDEwIDAgMCAxIDEwIDEwdjI0YTEwIDEwIDAgMCAxLTEwIDEwSDMwTDE3IDU5VjUwaC0zQTEwIDEwIDAgMCAxIDQgNDBWMTZBMTAgMTAgMCAwIDEgMTQgNnoiIGZpbGw9IiMxMjdBNUUiPjwvcGF0aD48cGF0aCBkPSJNNDQgMzh2LTJhOSA5IDAgMCAwLTktOUgxOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PC9wYXRoPjxwYXRoIGQ9Ik0yNiAxOWwtOCA4IDggOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPjxjaXJjbGUgY3g9IjQ2IiBjeT0iMTYiIHI9IjUiIGZpbGw9IiNGRjZCNEEiPjwvY2lyY2xlPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDYgNjQpIj48cGF0aCBkPSJNMjguMSAxLjVRMTcuOTAwMDAwMDAwMDAwMDAyIDEuNSAxMS42MjUwMDAwMDAwMDAwMDIgLTMuMTI1UTUuMzUwMDAwMDAwMDAwMDAwNSAtNy43NSA0LjAgLTE2LjJMMTcuOTAwMDAwMDAwMDAwMDAyIC0xOC4zUTE4Ljc1IC0xNC41IDIxLjY3NSAtMTIuMzUwMDAwMDAwMDAwMDAxUTI0LjYgLTEwLjIwMDAwMDAwMDAwMDAwMSAyOS4xIC0xMC4yMDAwMDAwMDAwMDAwMDFRMzIuODAwMDAwMDAwMDAwMDA0IC0xMC4yMDAwMDAwMDAwMDAwMDEgMzQuODAwMDAwMDAwMDAwMDA0IC0xMS42MjVRMzYuODAwMDAwMDAwMDAwMDA0IC0xMy4wNSAzNi44MDAwMDAwMDAwMDAwMDQgLTE1LjYwMDAwMDAwMDAwMDAwMVEzNi44MDAwMDAwMDAwMDAwMDQgLTE3LjIgMzYuMCAtMTguMTc1UTM1LjIgLTE5LjE1MDAwMDAwMDAwMDAwMiAzMi40MjUwMDAwMDAwMDAwMDQgLTIwLjFRMjkuNjUwMDAwMDAwMDAwMDAyIC0yMS4wNSAyMy44IC0yMi42UTE3LjIgLTI0LjMgMTMuMjUgLTI2LjRROS4zIC0yOC41IDcuNTUwMDAwMDAwMDAwMDAxIC0zMS40MjVRNS44MDAwMDAwMDAwMDAwMDEgLTM0LjM1IDUuODAwMDAwMDAwMDAwMDAxIC0zOC41UTUuODAwMDAwMDAwMDAwMDAxIC00My43IDguNDUwMDAwMDAwMDAwMDAxIC00Ny41MjUwMDAwMDAwMDAwMDZRMTEuMTAwMDAwMDAwMDAwMDAxIC01MS4zNSAxNS45MjUgLTUzLjQyNVEyMC43NSAtNTUuNSAyNy4zIC01NS41UTMzLjY1IC01NS41IDM4LjU1IC01My41NVE0My40NSAtNTEuNiA0Ni40NzUgLTQ4LjBRNDkuNSAtNDQuNDAwMDAwMDAwMDAwMDA2IDUwLjIgLTM5LjVMMzYuMzAwMDAwMDAwMDAwMDA0IC0zNy4wUTM1Ljk1IC00MC4wIDMzLjcgLTQxLjc1UTMxLjQ1MDAwMDAwMDAwMDAwMyAtNDMuNSAyNy42IC00My44MDAwMDAwMDAwMDAwMDRRMjMuODUgLTQ0LjA1MDAwMDAwMDAwMDAwNCAyMS41NzUwMDAwMDAwMDAwMDMgLTQyLjgwMDAwMDAwMDAwMDAwNFExOS4zIC00MS41NTAwMDAwMDAwMDAwMDQgMTkuMyAtMzkuMlExOS4zIC0zNy44MDAwMDAwMDAwMDAwMDQgMjAuMjc1IC0zNi44NVEyMS4yNSAtMzUuOSAyNC4zMjUwMDAwMDAwMDAwMDMgLTM0LjlRMjcuNDAwMDAwMDAwMDAwMDAyIC0zMy45IDMzLjcgLTMyLjMwMDAwMDAwMDAwMDAwNFEzOS44NSAtMzAuNzAwMDAwMDAwMDAwMDAzIDQzLjU3NSAtMjguNTc1MDAwMDAwMDAwMDAzUTQ3LjMwMDAwMDAwMDAwMDAwNCAtMjYuNDUwMDAwMDAwMDAwMDAzIDQ5LjAgLTIzLjQ3NVE1MC43IC0yMC41IDUwLjcgLTE2LjNRNTAuNyAtOC4wIDQ0LjcgLTMuMjVRMzguNyAxLjUgMjguMSAxLjVaTTU5LjcgLTYxLjVWLTczLjVINzMuMzAwMDAwMDAwMDAwMDFWLTYxLjVaTTU5LjcgMC4wVi01NC4wSDczLjMwMDAwMDAwMDAwMDAxVjAuMFpNMTUwLjMgMC4wVi0zMS45MDAwMDAwMDAwMDAwMDJRMTUwLjMgLTM3LjI1IDE0Ny43NzUgLTQwLjIyNVExNDUuMjUgLTQzLjIgMTQwLjggLTQzLjJRMTM3Ljk1MDAwMDAwMDAwMDAyIC00My4yIDEzNS44NTAwMDAwMDAwMDAwMiAtNDEuODc1UTEzMy43NSAtNDAuNTUwMDAwMDAwMDAwMDA0IDEzMi41NzUgLTM4LjE3NTAwMDAwMDAwMDAwNFExMzEuNCAtMzUuODAwMDAwMDAwMDAwMDA0IDEzMS40IC0zMi43VjAuMEgxMTcuODAwMDAwMDAwMDAwMDFWLTMxLjkwMDAwMDAwMDAwMDAwMlExMTcuODAwMDAwMDAwMDAwMDEgLTM3LjI1IDExNS4yNzUgLTQwLjIyNVExMTIuNzUwMDAwMDAwMDAwMDEgLTQzLjIgMTA4LjMwMDAwMDAwMDAwMDAxIC00My4yUTEwNC4wNTAwMDAwMDAwMDAwMSAtNDMuMiAxMDEuNDc1MDAwMDAwMDAwMDEgLTQwLjI3NTAwMDAwMDAwMDAwNlE5OC45IC0zNy4zNSA5OC45IC0zMi43VjAuMEg4NS4yMDAwMDAwMDAwMDAwMlYtNTQuMEg5Ny4yMDAwMDAwMDAwMDAwMlYtNDguMVE5OS41NTAwMDAwMDAwMDAwMSAtNTEuMCAxMDMuMDAwMDAwMDAwMDAwMDEgLTUyLjg1UTEwNy40NTAwMDAwMDAwMDAwMiAtNTUuMzAwMDAwMDAwMDAwMDA0IDExMy4wMDAwMDAwMDAwMDAwMSAtNTUuMzAwMDAwMDAwMDAwMDA0UTExOS4zNTAwMDAwMDAwMDAwMiAtNTUuMzAwMDAwMDAwMDAwMDA0IDEyMy40NTAwMDAwMDAwMDAwMiAtNTIuNlExMjYuODAwMDAwMDAwMDAwMDEgLTUwLjM1IDEyOC43MDAwMDAwMDAwMDAwMiAtNDYuOTAwMDAwMDAwMDAwMDA2UTEzMS4yNSAtNTAuNyAxMzUuNCAtNTIuOTVRMTM5LjggLTU1LjMwMDAwMDAwMDAwMDAwNCAxNDUuMjAwMDAwMDAwMDAwMDIgLTU1LjMwMDAwMDAwMDAwMDAwNFExNTQuNDUwMDAwMDAwMDAwMDIgLTU1LjMwMDAwMDAwMDAwMDAwNCAxNTkuMTc1IC00OS44MjVRMTYzLjkwMDAwMDAwMDAwMDAzIC00NC4zNSAxNjMuOTAwMDAwMDAwMDAwMDMgLTM1LjVWMC4wWk0yMDAuNDAwMDAwMDAwMDAwMDMgMS41UTE5Mi43NTAwMDAwMDAwMDAwMyAxLjUgMTg3LjUwMDAwMDAwMDAwMDAzIC0xLjkwMDAwMDAwMDAwMDAwMDFWMjQuMEgxNzMuODAwMDAwMDAwMDAwMDRWLTU0LjBIMTg1LjgwMDAwMDAwMDAwMDA0Vi01MS4wNTAwMDAwMDAwMDAwMDRRMTg2LjI1MDAwMDAwMDAwMDAzIC01MS40MDAwMDAwMDAwMDAwMDYgMTg2Ljc1MDAwMDAwMDAwMDAzIC01MS43NVExOTIuMDAwMDAwMDAwMDAwMDMgLTU1LjUgMTk5LjcwMDAwMDAwMDAwMDA1IC01NS41UTIwNy40NTAwMDAwMDAwMDAwNSAtNTUuNSAyMTMuMjAwMDAwMDAwMDAwMDUgLTUxLjhRMjE4Ljk1MDAwMDAwMDAwMDA1IC00OC4xIDIyMi4xMjUwMDAwMDAwMDAwNiAtNDEuNjc1UTIyNS4zMDAwMDAwMDAwMDAwNCAtMzUuMjUgMjI1LjMwMDAwMDAwMDAwMDA0IC0yNy4wUTIyNS4zMDAwMDAwMDAwMDAwNCAtMTguOTAwMDAwMDAwMDAwMDAyIDIyMi4xNzUwMDAwMDAwMDAwNCAtMTIuNDUwMDAwMDAwMDAwMDAxUTIxOS4wNTAwMDAwMDAwMDAwNCAtNi4wIDIxMy40NTAwMDAwMDAwMDAwNSAtMi4yNVEyMDcuODUwMDAwMDAwMDAwMDIgMS41IDIwMC40MDAwMDAwMDAwMDAwMyAxLjVaTTE5OC4yMDAwMDAwMDAwMDAwNSAtMTAuNjAwMDAwMDAwMDAwMDAxUTIwMi42MDAwMDAwMDAwMDAwMiAtMTAuNjAwMDAwMDAwMDAwMDAxIDIwNS40MDAwMDAwMDAwMDAwMyAtMTIuOFEyMDguMjAwMDAwMDAwMDAwMDUgLTE1LjAgMjA5LjU1MDAwMDAwMDAwMDA0IC0xOC43MjVRMjEwLjkwMDAwMDAwMDAwMDAzIC0yMi40NTAwMDAwMDAwMDAwMDMgMjEwLjkwMDAwMDAwMDAwMDAzIC0yNy4wUTIxMC45MDAwMDAwMDAwMDAwMyAtMzEuNSAyMDkuNTAwMDAwMDAwMDAwMDMgLTM1LjIyNVEyMDguMTAwMDAwMDAwMDAwMDIgLTM4Ljk1IDIwNS4xNzUgLTQxLjE3NTAwMDAwMDAwMDAwNFEyMDIuMjUwMDAwMDAwMDAwMDMgLTQzLjQwMDAwMDAwMDAwMDAwNiAxOTcuNzAwMDAwMDAwMDAwMDUgLTQzLjQwMDAwMDAwMDAwMDAwNlExOTMuNDUwMDAwMDAwMDAwMDUgLTQzLjQwMDAwMDAwMDAwMDAwNiAxOTAuODI1MDAwMDAwMDAwMDUgLTQxLjM1MDAwMDAwMDAwMDAxUTE4OC4yMDAwMDAwMDAwMDAwNSAtMzkuMzAwMDAwMDAwMDAwMDA0IDE4Ny4wMDAwMDAwMDAwMDAwNiAtMzUuNlExODUuODAwMDAwMDAwMDAwMDQgLTMxLjkwMDAwMDAwMDAwMDAwMiAxODUuODAwMDAwMDAwMDAwMDQgLTI3LjBRMTg1LjgwMDAwMDAwMDAwMDA0IC0yMi4xIDE4Ny4wMDAwMDAwMDAwMDAwNiAtMTguNDAwMDAwMDAwMDAwMDAyUTE4OC4yMDAwMDAwMDAwMDAwNSAtMTQuNzAwMDAwMDAwMDAwMDAxIDE5MC45MjUwMDAwMDAwMDAwNCAtMTIuNjUwMDAwMDAwMDAwMDAyUTE5My42NTAwMDAwMDAwMDAwMyAtMTAuNjAwMDAwMDAwMDAwMDAxIDE5OC4yMDAwMDAwMDAwMDAwNSAtMTAuNjAwMDAwMDAwMDAwMDAxWk0yMzQuMzAwMDAwMDAwMDAwMDQgMC4wVi03My41SDI0Ny45MDAwMDAwMDAwMDAwM1YwLjBaTTI2MC45MDAwMDAwMDAwMDAwMyAtNjEuNVYtNzMuNUgyNzQuNTAwMDAwMDAwMDAwMDZWLTYxLjVaTTI2MC45MDAwMDAwMDAwMDAwMyAwLjBWLTU0LjBIMjc0LjUwMDAwMDAwMDAwMDA2VjAuMFoiIGZpbGw9IiMwRjIwMUIiPjwvcGF0aD48cGF0aCBkPSJNMjg2LjUwMDAwMDAwMDAwMDA2IDAuMFYtNTQuMEgyOTguNTAwMDAwMDAwMDAwMDZWLTQ1LjMwMDAwMDAwMDAwMDAwNFEyOTkuMTUwMDAwMDAwMDAwMDMgLTQ2LjUgMzAwLjAwMDAwMDAwMDAwMDA2IC00Ny42UTMwMS43NTAwMDAwMDAwMDAwNiAtNDkuOTAwMDAwMDAwMDAwMDA2IDMwNC4zMDAwMDAwMDAwMDAwNyAtNTEuNDAwMDAwMDAwMDAwMDA2UTMwNi4yNTAwMDAwMDAwMDAwNiAtNTIuNiAzMDguNTUwMDAwMDAwMDAwMDcgLTUzLjI3NTAwMDAwMDAwMDAwNlEzMTAuODUwMDAwMDAwMDAwMSAtNTMuOTUgMzEzLjMwMDAwMDAwMDAwMDA3IC01NC4xMjVRMzE1Ljc1MDAwMDAwMDAwMDA2IC01NC4zMDAwMDAwMDAwMDAwMDQgMzE4LjIwMDAwMDAwMDAwMDA1IC01NC4wVi00MS4zMDAwMDAwMDAwMDAwMDRRMzE1Ljk1MDAwMDAwMDAwMDA1IC00Mi4wIDMxMi45NzUgLTQxLjc3NTAwMDAwMDAwMDAwNlEzMTAuMDAwMDAwMDAwMDAwMDYgLTQxLjU1MDAwMDAwMDAwMDAwNCAzMDcuNjAwMDAwMDAwMDAwMSAtNDAuNDAwMDAwMDAwMDAwMDA2UTMwNS4yMDAwMDAwMDAwMDAwNSAtMzkuMzAwMDAwMDAwMDAwMDA0IDMwMy41NTAwMDAwMDAwMDAwNyAtMzcuNDc1UTMwMS45MDAwMDAwMDAwMDAwMyAtMzUuNjUgMzAxLjA1MDAwMDAwMDAwMDA3IC0zMy4xNzVRMzAwLjIwMDAwMDAwMDAwMDA1IC0zMC43MDAwMDAwMDAwMDAwMDMgMzAwLjIwMDAwMDAwMDAwMDA1IC0yNy42VjAuMFpNMzQ5LjgwMDAwMDAwMDAwMDA3IDEuNVEzNDEuNTAwMDAwMDAwMDAwMDYgMS41IDMzNS4xNzUwMDAwMDAwMDAwNyAtMi4wNzVRMzI4Ljg1IC01LjY1IDMyNS4yNzUwMDAwMDAwMDAwMyAtMTEuOTI1UTMyMS43MDAwMDAwMDAwMDAwNSAtMTguMiAzMjEuNzAwMDAwMDAwMDAwMDUgLTI2LjNRMzIxLjcwMDAwMDAwMDAwMDA1IC0zNS4xNSAzMjUuMjAwMDAwMDAwMDAwMDUgLTQxLjdRMzI4LjcwMDAwMDAwMDAwMDA1IC00OC4yNSAzMzQuODUgLTUxLjg3NVEzNDEuMDAwMDAwMDAwMDAwMDYgLTU1LjUgMzQ5LjAwMDAwMDAwMDAwMDA2IC01NS41UTM1Ny41MDAwMDAwMDAwMDAwNiAtNTUuNSAzNjMuNDUwMDAwMDAwMDAwMDUgLTUxLjVRMzY5LjQwMDAwMDAwMDAwMDAzIC00Ny41IDM3Mi4yNSAtNDAuMjVRMzc1LjEgLTMzLjAgMzc0LjI1MDAwMDAwMDAwMDA2IC0yMy4yMDAwMDAwMDAwMDAwMDNIMzM2LjM1UTMzNy4wMDAwMDAwMDAwMDAwNiAtMTguMzUgMzM5LjQwMDAwMDAwMDAwMDAzIC0xNS4zNTAwMDAwMDAwMDAwMDFRMzQyLjY1MDAwMDAwMDAwMDAzIC0xMS4yMDAwMDAwMDAwMDAwMDEgMzQ5LjAwMDAwMDAwMDAwMDA2IC0xMS4yMDAwMDAwMDAwMDAwMDFRMzUzLjAwMDAwMDAwMDAwMDA2IC0xMS4yMDAwMDAwMDAwMDAwMDEgMzU1Ljg1IC0xMi45NTAwMDAwMDAwMDAwMDFRMzU4LjcwMDAwMDAwMDAwMDA1IC0xNC43MDAwMDAwMDAwMDAwMDEgMzYwLjIwMDAwMDAwMDAwMDA1IC0xOC4wTDM3My44MDAwMDAwMDAwMDAwNyAtMTQuMTAwMDAwMDAwMDAwMDAxUTM3MC43NTAwMDAwMDAwMDAwNiAtNi43IDM2NC4xNzUwMDAwMDAwMDAwNyAtMi42UTM1Ny42IDEuNSAzNDkuODAwMDAwMDAwMDAwMDcgMS41Wk0zNjAuNTAwMDAwMDAwMDAwMDYgLTMzLjMwMDAwMDAwMDAwMDAwNFEzNTkuOTAwMDAwMDAwMDAwMDMgLTM3LjcgMzU4LjIwMDAwMDAwMDAwMDA1IC00MC4xUTM1NS41NTAwMDAwMDAwMDAwNyAtNDMuNyAzNDkuNiAtNDMuN1EzNDIuNjUwMDAwMDAwMDAwMDMgLTQzLjcgMzM5LjQwMDAwMDAwMDAwMDAzIC0zOS41UTMzNy41MDAwMDAwMDAwMDAwNiAtMzcuMDUwMDAwMDAwMDAwMDA0IDMzNi43MDAwMDAwMDAwMDAwNSAtMzMuMzAwMDAwMDAwMDAwMDA0Wk00MDkuMDAwMDAwMDAwMDAwMDYgMS41UTQwMS4zNTAwMDAwMDAwMDAxIDEuNSAzOTYuMTAwMDAwMDAwMDAwMSAtMS45MDAwMDAwMDAwMDAwMDAxVjI0LjBIMzgyLjQwMDAwMDAwMDAwMDAzVi01NC4wSDM5NC40MDAwMDAwMDAwMDAwM1YtNTEuMDUwMDAwMDAwMDAwMDA0UTM5NC44NTAwMDAwMDAwMDAxIC01MS40MDAwMDAwMDAwMDAwMDYgMzk1LjM1MDAwMDAwMDAwMDEgLTUxLjc1UTQwMC42MDAwMDAwMDAwMDAxIC01NS41IDQwOC4zMDAwMDAwMDAwMDAwNyAtNTUuNVE0MTYuMDUwMDAwMDAwMDAwMDcgLTU1LjUgNDIxLjgwMDAwMDAwMDAwMDA3IC01MS44UTQyNy41NTAwMDAwMDAwMDAwNyAtNDguMSA0MzAuNzI1MDAwMDAwMDAwMSAtNDEuNjc1UTQzMy45MDAwMDAwMDAwMDAxIC0zNS4yNSA0MzMuOTAwMDAwMDAwMDAwMSAtMjcuMFE0MzMuOTAwMDAwMDAwMDAwMSAtMTguOTAwMDAwMDAwMDAwMDAyIDQzMC43NzUwMDAwMDAwMDAxIC0xMi40NTAwMDAwMDAwMDAwMDFRNDI3LjY1MDAwMDAwMDAwMDEgLTYuMCA0MjIuMDUwMDAwMDAwMDAwMDcgLTIuMjVRNDE2LjQ1MDAwMDAwMDAwMDA1IDEuNSA0MDkuMDAwMDAwMDAwMDAwMDYgMS41Wk00MDYuODAwMDAwMDAwMDAwMDcgLTEwLjYwMDAwMDAwMDAwMDAwMVE0MTEuMjAwMDAwMDAwMDAwMDUgLTEwLjYwMDAwMDAwMDAwMDAwMSA0MTQuMDAwMDAwMDAwMDAwMDYgLTEyLjhRNDE2LjgwMDAwMDAwMDAwMDA3IC0xNS4wIDQxOC4xNTAwMDAwMDAwMDAxIC0xOC43MjVRNDE5LjUwMDAwMDAwMDAwMDA2IC0yMi40NTAwMDAwMDAwMDAwMDMgNDE5LjUwMDAwMDAwMDAwMDA2IC0yNy4wUTQxOS41MDAwMDAwMDAwMDAwNiAtMzEuNSA0MTguMSAtMzUuMjI1UTQxNi43MDAwMDAwMDAwMDAwNSAtMzguOTUgNDEzLjc3NTAwMDAwMDAwMDEgLTQxLjE3NTAwMDAwMDAwMDAwNFE0MTAuODUwMDAwMDAwMDAwMSAtNDMuNDAwMDAwMDAwMDAwMDA2IDQwNi4zMDAwMDAwMDAwMDAwNyAtNDMuNDAwMDAwMDAwMDAwMDA2UTQwMi4wNTAwMDAwMDAwMDAwNyAtNDMuNDAwMDAwMDAwMDAwMDA2IDM5OS40MjUwMDAwMDAwMDAwNyAtNDEuMzUwMDAwMDAwMDAwMDFRMzk2LjgwMDAwMDAwMDAwMDA3IC0zOS4zMDAwMDAwMDAwMDAwMDQgMzk1LjYgLTM1LjZRMzk0LjQwMDAwMDAwMDAwMDAzIC0zMS45MDAwMDAwMDAwMDAwMDIgMzk0LjQwMDAwMDAwMDAwMDAzIC0yNy4wUTM5NC40MDAwMDAwMDAwMDAwMyAtMjIuMSAzOTUuNiAtMTguNDAwMDAwMDAwMDAwMDAyUTM5Ni44MDAwMDAwMDAwMDAwNyAtMTQuNzAwMDAwMDAwMDAwMDAxIDM5OS41MjUwMDAwMDAwMDAxIC0xMi42NTAwMDAwMDAwMDAwMDJRNDAyLjI1MDAwMDAwMDAwMDA2IC0xMC42MDAwMDAwMDAwMDAwMDEgNDA2LjgwMDAwMDAwMDAwMDA3IC0xMC42MDAwMDAwMDAwMDAwMDFaTTQ0Mi45MDAwMDAwMDAwMDAxIDAuMFYtNzMuNUg0NTYuNTAwMDAwMDAwMDAwMVYwLjBaTTQ3NS40MDAwMDAwMDAwMDAxIDI0LjAgNDg0LjMwMDAwMDAwMDAwMDEgLTAuNDUgNDYyLjUwMDAwMDAwMDAwMDEgLTU0LjBINDc2LjYwMDAwMDAwMDAwMDE0TDQ5MC44MDAwMDAwMDAwMDAxIC0xNy4yNUw1MDQuOTAwMDAwMDAwMDAwMSAtNTQuMEg1MTguNTAwMDAwMDAwMDAwMUw0ODguMDAwMDAwMDAwMDAwMSAyNC4wWiIgZmlsbD0iIzEyN0E1RSI+PC9wYXRoPjwvZz48L3N2Zz4=" alt="simplireply" style="height: 26px; width: auto"></a>
+<nav aria-label="Main" style="display: flex; gap: 28px; flex-wrap: wrap; align-items: center; font-size: 15px">
+<a class="lnk nav-hide" href="#how" style="color: #3A4A45; text-decoration: none">How it works</a>
+<a class="lnk nav-hide" href="#offer" style="color: #3A4A45; text-decoration: none">Free plan</a>
+<a class="lnk nav-hide" href="#faq" style="color: #3A4A45; text-decoration: none">FAQ</a>
+<a class="btn-k" href="https://wa.me/917094596877?text=Hi%2C%20I%27d%20like%20to%20check%20if%20my%20practice%20qualifies" target="_blank" rel="noopener" style="background: #0F201B; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 14px; padding: 10px 16px; border-radius: 8px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Check if I qualify</a>
+</nav>
+</div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section id="top" style="position: relative">
+<svg aria-hidden="true" viewBox="0 0 1440 640" preserveAspectRatio="none" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none">
+<g class="flow" fill="none" stroke="#DAD8D3" stroke-width="1">
+<path d="M0 120 C 260 160, 380 260, 520 330"></path>
+<path d="M0 220 C 240 240, 380 300, 520 340"></path>
+<path d="M0 340 C 220 340, 380 345, 520 350"></path>
+<path d="M0 470 C 240 440, 380 390, 520 360"></path>
+<path d="M0 580 C 260 520, 380 430, 520 370"></path>
+<path d="M1440 120 C 1180 160, 1060 260, 920 330"></path>
+<path d="M1440 220 C 1200 240, 1060 300, 920 340"></path>
+<path d="M1440 340 C 1220 340, 1060 345, 920 350"></path>
+<path d="M1440 470 C 1200 440, 1060 390, 920 360"></path>
+<path d="M1440 580 C 1180 520, 1060 430, 920 370"></path>
+</g>
+<g fill="#127A5E"><circle r="2.6"><animateMotion dur="7.0s" begin="0.0s" repeatCount="indefinite" path="M0 120 C 260 160, 380 260, 520 330"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="7.0s" begin="0.0s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="8.3s" begin="0.9s" repeatCount="indefinite" path="M0 220 C 240 240, 380 300, 520 340"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="8.3s" begin="0.9s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="9.6s" begin="1.8s" repeatCount="indefinite" path="M0 340 C 220 340, 380 345, 520 350"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="9.6s" begin="1.8s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="10.9s" begin="2.7s" repeatCount="indefinite" path="M0 470 C 240 440, 380 390, 520 360"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="10.9s" begin="2.7s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="12.2s" begin="3.6s" repeatCount="indefinite" path="M0 580 C 260 520, 380 430, 520 370"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="12.2s" begin="3.6s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="7.0s" begin="4.5s" repeatCount="indefinite" path="M1440 120 C 1180 160, 1060 260, 920 330"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="7.0s" begin="4.5s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="8.3s" begin="5.4s" repeatCount="indefinite" path="M1440 220 C 1200 240, 1060 300, 920 340"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="8.3s" begin="5.4s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="9.6s" begin="6.3s" repeatCount="indefinite" path="M1440 340 C 1220 340, 1060 345, 920 350"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="9.6s" begin="6.3s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="10.9s" begin="7.2s" repeatCount="indefinite" path="M1440 470 C 1200 440, 1060 390, 920 360"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="10.9s" begin="7.2s" repeatCount="indefinite"></animate></circle><circle r="2.6"><animateMotion dur="12.2s" begin="8.1s" repeatCount="indefinite" path="M1440 580 C 1180 520, 1060 430, 920 370"></animateMotion><animate attributeName="opacity" values="0;1;1;0" dur="12.2s" begin="8.1s" repeatCount="indefinite"></animate></circle></g>
+</svg>
+<div aria-hidden="true" class="glow" style="position: absolute; left: 50%; top: 120px; width: 640px; height: 360px; margin-left: -320px; border-radius: 9999px; background: radial-gradient(closest-side, rgba(18,122,94,0.10), rgba(18,122,94,0)); pointer-events: none"></div>
+<div style="position: relative; max-width: 860px; margin: 0 auto; padding: 72px 24px 88px; display: flex; flex-direction: column; gap: 22px; align-items: center; text-align: center">
+<div class="in d1" style="display: flex; flex-direction: column; gap: 8px; align-items: center">
+<span style="display: inline-flex; align-items: center; gap: 8px; background: #FFFFFF; border-radius: 9999px; padding: 6px 14px; font-size: 13px; color: #5A6B65; box-shadow: 0 1px 3px rgba(15,32,27,0.08)"><span style="position: relative; width: 8px; height: 8px; display: inline-block"><span class="ping" style="position: absolute; inset: 0; border-radius: 9999px; background: #127A5E"></span><span style="position: absolute; inset: 0; border-radius: 9999px; background: #127A5E"></span></span><span style="color: #127A5E; font-weight: 600">10 free slots</span> open this month</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; background: #EEEDEA; border-radius: 9999px; padding: 6px 14px; font-size: 13px; color: #5A6B65"><span style="color: #0F201B; font-weight: 600">₹0</span> forever</span>
+</div>
+<h1 class="in d2" style="margin: 0; font-size: clamp(38px, 7.5vw, 64px); line-height: 1.07; font-weight: 400; letter-spacing: -0.03em">Every patient enquiry answered <span class="uline" style="color: #127A5E">in seconds</span> and followed up till they visit</h1>
+<div class="in d3" style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center">
+<span style="background: #EEEDEA; border-radius: 8px; padding: 6px 12px; font-size: 14px">No extra staff needed</span>
+<span style="background: #EEEDEA; border-radius: 8px; padding: 6px 12px; font-size: 14px">Works 24/7</span>
+<span style="background: #EEEDEA; border-radius: 8px; padding: 6px 12px; font-size: 14px">Set up for you</span>
+</div>
+<a class="box in d4" href="https://wa.me/917094596877?text=Hi%2C%20I%27d%20like%20to%20check%20if%20my%20practice%20qualifies" target="_blank" rel="noopener" style="margin-top: 8px; width: 100%; max-width: 520px; box-sizing: border-box; background: #FFFFFF; border: 2px solid #0F201B; border-radius: 14px; padding: 10px 10px 10px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-decoration: none; color: #0F201B; min-height: 60px">
+<span style="font-size: 17px; font-weight: 500">Check if my practice qualifies</span>
+<span style="width: 40px; height: 40px; flex: none; border-radius: 10px; background: #127A5E; display: flex; align-items: center; justify-content: center"><svg class="nudge" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+<p class="in d5" style="margin: 0; font-size: 14px; color: #5A6B65">3 taps on WhatsApp · under 30 seconds · or <a href="https://calendly.com/harrish-simplireply/30min" target="_blank" rel="noopener" style="color: #5A6B65">book a 30-min call</a></p>
+<p class="in d6" style="margin: 16px 0 0; font-size: 18px; line-height: 28px; color: #5A6B65; max-width: 600px">A done-for-you WhatsApp front desk for doctors. We reply, remind and follow up. You see the patients.</p>
+<div class="in d6" style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; max-width: 640px"><span style="background: #FFFFFF; border-radius: 8px; padding: 6px 12px; font-size: 14px; color: #3A4A45; box-shadow: 0 1px 3px rgba(15,32,27,0.08)">General physicians</span><span style="background: #FFFFFF; border-radius: 8px; padding: 6px 12px; font-size: 14px; color: #3A4A45; box-shadow: 0 1px 3px rgba(15,32,27,0.08)">Paediatricians</span><span style="background: #FFFFFF; border-radius: 8px; padding: 6px 12px; font-size: 14px; color: #3A4A45; box-shadow: 0 1px 3px rgba(15,32,27,0.08)">Gynaecologists</span><span style="background: #FFFFFF; border-radius: 8px; padding: 6px 12px; font-size: 14px; color: #3A4A45; box-shadow: 0 1px 3px rgba(15,32,27,0.08)">Orthopaedics</span><span style="background: #FFFFFF; border-radius: 8px; padding: 6px 12px; font-size: 14px; color: #3A4A45; box-shadow: 0 1px 3px rgba(15,32,27,0.08)">ENT</span><span style="background: #FFFFFF; border-radius: 8px; padding: 6px 12px; font-size: 14px; color: #3A4A45; box-shadow: 0 1px 3px rgba(15,32,27,0.08)">Dermatologists</span><span style="background: #FFFFFF; border-radius: 8px; padding: 6px 12px; font-size: 14px; color: #3A4A45; box-shadow: 0 1px 3px rgba(15,32,27,0.08)">Cardiologists</span><span style="background: #FFFFFF; border-radius: 8px; padding: 6px 12px; font-size: 14px; color: #3A4A45; box-shadow: 0 1px 3px rgba(15,32,27,0.08)">Diabetologists</span></div>
+</div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 96px; display: flex; flex-direction: column; gap: 32px">
+<h2 class="reveal" style="margin: 0; font-size: clamp(28px, 5.2vw, 40px); line-height: 1.15; font-weight: 400; letter-spacing: -0.02em; text-align: center">Where your ad money leaks</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div class="card reveal" style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-direction: column; gap: 40px; justify-content: space-between">
+<span style="font-size: clamp(26px, 4.6vw, 36px); line-height: 1.17; letter-spacing: -0.02em">Slow reply</span>
+<span style="font-size: 15px; line-height: 22px; color: #5A6B65">A patient messages at 9 pm, gets a reply next morning. They've seen another doctor.</span>
+</div>
+<div class="card reveal" style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-direction: column; gap: 40px; justify-content: space-between">
+<span style="font-size: clamp(26px, 4.6vw, 36px); line-height: 1.17; letter-spacing: -0.02em">No follow-up</span>
+<span style="font-size: 15px; line-height: 22px; color: #5A6B65">"I'll come this week" — then silence. Nobody checks in.</span>
+</div>
+<div class="card reveal" style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-direction: column; gap: 40px; justify-content: space-between">
+<span style="font-size: clamp(26px, 4.6vw, 36px); line-height: 1.17; letter-spacing: -0.02em">No-shows</span>
+<span style="font-size: 15px; line-height: 22px; color: #5A6B65">Booked slots and follow-up visits that never happen. Gaps in your OPD.</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 20px">
+<h2 class="reveal" style="margin: 0 0 12px; font-size: clamp(28px, 5.2vw, 40px); line-height: 1.15; font-weight: 400; letter-spacing: -0.02em; text-align: center">We run the entire follow-up</h2>
+
+<!-- step 1 -->
+<div class="card reveal step" style="background: #FFFFFF; border-radius: 14px; padding: 32px;  box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; color: #127A5E; font-weight: 600">01</span>
+<h3 style="margin: 0; font-size: clamp(24px, 4.4vw, 34px); line-height: 1.18; font-weight: 400; letter-spacing: -0.02em">Replies in seconds</h3>
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #5A6B65">OPD timings, consultation fee and a slot to book. Day or night.</p>
+</div>
+<div role="img" aria-label="Chat: patient asks about the doctor's availability and fee at 9:42 pm, gets an instant reply with slots" style="flex: 1 1 460px; min-width: 0; background: #F4F3F1; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+<div class="b1" style="align-self: flex-end; max-width: 80%; background: #D9F5EA; border-radius: 12px 12px 2px 12px; padding: 10px 14px; font-size: 15px; line-height: 22px">Hi, is the doctor available tomorrow? What's the fee? <span style="font-size: 11px; color: #5A6B65; margin-left: 6px">9:42 pm</span></div>
+<div class="b2" style="align-self: flex-start; max-width: 85%; background: #FFFFFF; border-radius: 12px 12px 12px 2px; padding: 10px 14px; font-size: 15px; line-height: 22px">Hi! Here are the OPD timings and consultation fee. Shall I book a slot? <span style="font-size: 11px; color: #5A6B65; margin-left: 6px">9:42 pm</span></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span class="b3" style="background: #FFFFFF; border: 1px solid #C4DED7; color: #127A5E; border-radius: 8px; padding: 6px 12px; font-size: 14px; font-weight: 500">Tue 10:30 am</span>
+<span class="b4" style="background: #FFFFFF; border: 1px solid #C4DED7; color: #127A5E; border-radius: 8px; padding: 6px 12px; font-size: 14px; font-weight: 500">Tue 6 pm</span>
+</div>
+</div>
+</div>
+
+<!-- step 2 -->
+<div class="card reveal step" style="background: #FFFFFF; border-radius: 14px; padding: 32px;  box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; color: #127A5E; font-weight: 600">02</span>
+<h3 style="margin: 0; font-size: clamp(24px, 4.4vw, 34px); line-height: 1.18; font-weight: 400; letter-spacing: -0.02em">Books and reminds appointments</h3>
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #5A6B65">Consultations, follow-up visits and report reviews, reminded the day before and an hour before. Fewer no-shows.</p>
+</div>
+<div style="flex: 1 1 460px; min-width: 0; background: #F4F3F1; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<span style="font-size: 14px; color: #5A6B65">Reminders going out today</span>
+<div style="display: flex; gap: 10px; align-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Consultation · Tue 10:30 am · sent</div>
+<div style="display: flex; gap: 10px; align-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Follow-up visit · Tue 6 pm · sent</div>
+<div style="display: flex; gap: 10px; align-items: center; color: #5A6B65"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A6B65" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l2 2"></path></svg>Report review · Wed 11 am · scheduled</div>
+</div>
+</div>
+
+<!-- step 3 -->
+<div class="card reveal step" style="background: #FFFFFF; border-radius: 14px; padding: 32px;  box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; color: #127A5E; font-weight: 600">03</span>
+<h3 style="margin: 0; font-size: clamp(24px, 4.4vw, 34px); line-height: 1.18; font-weight: 400; letter-spacing: -0.02em">Follows up till they book</h3>
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #5A6B65">Every "I'll come later" gets a gentle nudge. Missed visits get a new slot. You see where each patient stands.</p>
+</div>
+<div style="flex: 1 1 460px; min-width: 0; background: #F4F3F1; border-radius: 12px; overflow: hidden; font-size: 15px">
+<div style="display: flex; justify-content: space-between; padding: 12px 20px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5A6B65"><span>Enquiry</span><span>Stage</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #FFFFFF; border-top: 1px solid #ECEAE6"><span>Patient · New consultation</span><span style="background: #D9F5EA; color: #0D5542; border-radius: 6px; padding: 3px 10px; font-size: 13px; font-weight: 500">Visited</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #FFFFFF; border-top: 1px solid #ECEAE6"><span>Patient · Follow-up visit</span><span style="background: #E7F2EF; color: #0D5542; border-radius: 6px; padding: 3px 10px; font-size: 13px; font-weight: 500">Booked</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #FFFFFF; border-top: 1px solid #ECEAE6"><span>Patient · Health check-up</span><span style="background: #EEEDEA; color: #3A4A45; border-radius: 6px; padding: 3px 10px; font-size: 13px; font-weight: 500">Following up</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #FFFFFF; border-top: 1px solid #ECEAE6"><span>Patient · Second opinion</span><span style="background: #EEEDEA; color: #5A6B65; border-radius: 6px; padding: 3px 10px; font-size: 13px; font-weight: 500">Not now</span></div>
+</div>
+</div>
+
+<!-- step 4 -->
+<div class="card reveal step" style="background: #FFFFFF; border-radius: 14px; padding: 32px;  box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; color: #127A5E; font-weight: 600">04</span>
+<h3 style="margin: 0; font-size: clamp(24px, 4.4vw, 34px); line-height: 1.18; font-weight: 400; letter-spacing: -0.02em">Shows you the ₹ every week</h3>
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #5A6B65">Who booked, who visited, and how much revenue went unanswered.</p>
+</div>
+<div class="report" style="flex: 1 1 460px; min-width: 0; display: flex; flex-wrap: wrap; gap: 10px">
+<div style="flex: 1 1 180px; background: #F4F3F1; border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 26px; font-weight: 500"><span data-count="40">40</span></span><span style="font-size: 14px; color: #5A6B65">Enquiries this week</span></div>
+<div style="flex: 1 1 180px; background: #F4F3F1; border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 26px; font-weight: 500"><span data-count="12">12</span></span><span style="font-size: 14px; color: #5A6B65">Booked</span></div>
+<div style="flex: 1 1 180px; background: #F4F3F1; border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 26px; font-weight: 500"><span data-count="15">15</span></span><span style="font-size: 14px; color: #5A6B65">Never heard back</span></div>
+<div style="flex: 1 1 180px; background: #D9F5EA; border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 26px; font-weight: 500; color: #0D5542">₹<span data-count="75000" data-inr="1">75,000</span></span><span style="font-size: 14px; color: #0D5542">Revenue missed (example, ₹5k per patient)</span></div>
+</div>
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 20px">
+<a class="btn-k" href="https://wa.me/917094596877?text=Hi%2C%20I%27d%20like%20to%20check%20if%20my%20practice%20qualifies" target="_blank" rel="noopener" style="background: #0F201B; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px; padding: 14px 24px; border-radius: 10px; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px">Start free <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- THREE THINGS -->
+<section>
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 32px">
+<h2 class="reveal" style="margin: 0; font-size: clamp(28px, 5.2vw, 40px); line-height: 1.15; font-weight: 400; letter-spacing: -0.02em; text-align: center">Three things you won't get elsewhere</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div class="card reveal" style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-direction: column; gap: 40px; justify-content: space-between">
+<span style="font-size: clamp(26px, 4.6vw, 36px); line-height: 1.17; letter-spacing: -0.02em">Done for you</span>
+<span style="font-size: 15px; line-height: 22px; color: #5A6B65">We set up, write and run it. No app for your front desk to learn.</span>
+</div>
+<div class="card reveal" style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-direction: column; gap: 40px; justify-content: space-between">
+<span style="font-size: clamp(26px, 4.6vw, 36px); line-height: 1.17; letter-spacing: -0.02em">Free forever</span>
+<span style="font-size: 15px; line-height: 22px; color: #5A6B65">The basics never cost you a rupee.</span>
+</div>
+<div class="card reveal" style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-direction: column; gap: 40px; justify-content: space-between">
+<span style="font-size: clamp(26px, 4.6vw, 36px); line-height: 1.17; letter-spacing: -0.02em">Proof in ₹</span>
+<span style="font-size: 15px; line-height: 22px; color: #5A6B65">A weekly report of patients booked and revenue missed.</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- OFFER -->
+<section id="offer">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 32px; align-items: center">
+<h2 class="reveal" style="margin: 0; font-size: clamp(28px, 5.2vw, 40px); line-height: 1.15; font-weight: 400; letter-spacing: -0.02em; text-align: center">Free forever. Upgrade only when it fills your OPD.</h2>
+<div class="card reveal offer" style="width: 100%; max-width: 640px; box-sizing: border-box; background: #FFFFFF; border-radius: 14px; padding: 32px;  box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: center">
+<span style="font-size: 28px; font-weight: 500">₹0 forever</span>
+<div style="width: 100%; height: 6px; border-radius: 9999px; background: #ECEAE6; overflow: hidden"><div class="bar" style="width: 100%; height: 100%; background: #127A5E"></div></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<div class="tile" style="flex: 1 1 240px; background: #F4F3F1; border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 24px; font-weight: 500">Forever</span><span style="font-size: 14px; color: #5A6B65">No time limit</span></div>
+<div class="tile" style="flex: 1 1 240px; background: #F4F3F1; border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 24px; font-weight: 500">10</span><span style="font-size: 14px; color: #5A6B65">Slots a month</span></div>
+<div class="tile" style="flex: 1 1 240px; background: #F4F3F1; border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 24px; font-weight: 500">₹2,000</span><span style="font-size: 14px; color: #5A6B65">Refundable deposit</span></div>
+<div class="tile" style="flex: 1 1 240px; background: #F4F3F1; border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 24px; font-weight: 500">Meta fees</span><span style="font-size: 14px; color: #5A6B65">Per-message, paid by you</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 15px; color: #3A4A45; justify-content: center">
+<span>Instant replies</span><span class="sep" aria-hidden="true">·</span><span>Appointment reminders</span><span class="sep" aria-hidden="true">·</span><span>Enquiry log</span><span class="sep" aria-hidden="true">·</span><span>Weekly ₹ report</span>
+</div>
+<a class="btn-k" href="https://wa.me/917094596877?text=Hi%2C%20I%27d%20like%20to%20check%20if%20my%20practice%20qualifies" target="_blank" rel="noopener" style="align-self: center; background: #0F201B; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px; padding: 14px 24px; border-radius: 10px; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px">Claim a free slot <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+
+<!-- after pilot -->
+<div style="width: 100%; max-width: 640px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 15px; color: #5A6B65; text-align: center">Upgrade only if you want more</span>
+<div class="card reveal nopad" style="background: #FFFFFF; border-radius: 14px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); overflow: hidden; font-size: 15px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 16px 24px"><span style="font-weight: 500">Growth · a full OPD</span><span>₹7,000 / month</span></div>
+<div style="display: flex; gap: 10px; align-items: center; padding: 14px 24px; border-top: 1px solid #ECEAE6"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Follow-up till the patient books</div>
+<div style="display: flex; gap: 10px; align-items: center; padding: 14px 24px; border-top: 1px solid #ECEAE6"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Replies written for your practice and timings</div>
+<div style="display: flex; gap: 10px; align-items: center; padding: 14px 24px; border-top: 1px solid #ECEAE6"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>No-show recovery with a new slot</div>
+<div style="display: flex; gap: 10px; align-items: center; padding: 14px 24px; border-top: 1px solid #ECEAE6"><svg width="16" height="16" style="flex: none" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Follow-up visit and check-up reminders</div>
+<div style="display: flex; gap: 10px; align-items: center; padding: 14px 24px; border-top: 1px solid #ECEAE6"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Google review requests after each visit</div>
+<div style="display: flex; gap: 10px; align-items: center; padding: 14px 24px; border-top: 1px solid #ECEAE6"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Monthly 30-min review call and message updates by us</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHO -->
+<section>
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 32px">
+<h2 class="reveal" style="margin: 0; font-size: clamp(28px, 5.2vw, 40px); line-height: 1.15; font-weight: 400; letter-spacing: -0.02em; text-align: center">Made for doctors with OPD slots to fill</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center">
+<div class="card reveal" style="flex: 1 1 320px; max-width: 440px; min-width: 0; background: #FFFFFF; border-radius: 14px; padding: 28px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 14px; color: #127A5E; font-weight: 600">Great fit</span>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 17px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Running Meta ads</div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 17px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>15+ enquiries a month</div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 17px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#127A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Open slots in your OPD</div>
+</div>
+<div class="card reveal" style="flex: 1 1 320px; max-width: 440px; min-width: 0; background: #EEEDEA; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 14px; color: #5A6B65; font-weight: 600">Not yet</span>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 17px; color: #5A6B65"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A6B65" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>Booked out weeks ahead</div>
+<div style="display: flex; gap: 10px; align-items: center; font-size: 17px; color: #5A6B65"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A6B65" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>Under 15 enquiries a month</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+<div style="max-width: 760px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 24px">
+<h2 class="reveal" style="margin: 0; font-size: clamp(28px, 5.2vw, 40px); line-height: 1.15; font-weight: 400; letter-spacing: -0.02em; text-align: center">Common questions</h2>
+<div class="card reveal nopad" style="background: #FFFFFF; border-radius: 14px; box-shadow: 0 1px 3px rgba(15,32,27,0.08); overflow: hidden">
+<details style="padding: 0 24px">
+<summary style="padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 500; min-height: 44px">Is it really free?<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F201B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0 0 20px; font-size: 15px; line-height: 24px; color: #5A6B65">Yes. The free plan stays free forever. You only pay Meta's WhatsApp message charges.</p>
+</details>
+<details style="padding: 0 24px; border-top: 1px solid #ECEAE6">
+<summary style="padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 500; min-height: 44px">Why a ₹2,000 deposit?<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F201B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0 0 20px; font-size: 15px; line-height: 24px; color: #5A6B65">It keeps the 10 slots for clinics who'll use them. It's fully refundable.</p>
+</details>
+<details style="padding: 0 24px; border-top: 1px solid #ECEAE6">
+<summary style="padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 500; min-height: 44px">Do my staff need to learn anything?<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F201B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0 0 20px; font-size: 15px; line-height: 24px; color: #5A6B65">No. We set it up and run it. Your front desk takes the calls and bookings.</p>
+</details>
+<details style="padding: 0 24px; border-top: 1px solid #ECEAE6">
+<summary style="padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 500; min-height: 44px">Does it give medical advice?<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F201B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0 0 20px; font-size: 15px; line-height: 24px; color: #5A6B65">No. It shares prices, timings and slots, and books appointments. Clinical questions go straight to you or your staff.</p>
+</details>
+<details style="padding: 0 24px; border-top: 1px solid #ECEAE6">
+<summary style="padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 500; min-height: 44px">What patient details do you collect?<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F201B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0 0 20px; font-size: 15px; line-height: 24px; color: #5A6B65">Only what's needed to book: name, phone number and preferred slot. No medical records.</p>
+</details>
+<details style="padding: 0 24px; border-top: 1px solid #ECEAE6">
+<summary style="padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 500; min-height: 44px">When would I pay you?<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F201B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0 0 20px; font-size: 15px; line-height: 24px; color: #5A6B65">Only if you choose Growth. The free plan has no time limit.</p>
+</details>
+<details style="padding: 0 24px; border-top: 1px solid #ECEAE6">
+<summary style="padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 17px; font-weight: 500; min-height: 44px">How do I start?<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F201B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0 0 20px; font-size: 15px; line-height: 24px; color: #5A6B65">Tap "Check if I qualify", answer 3 quick questions on WhatsApp, and we'll call you back.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- CLOSING -->
+<section>
+<div style="max-width: 960px; margin: 0 auto; padding: 32px 24px 120px; display: flex; flex-direction: column; gap: 28px; align-items: center; text-align: center">
+<h2 class="reveal" style="margin: 0; font-size: clamp(34px, 7vw, 60px); line-height: 1.1; font-weight: 400; letter-spacing: -0.03em">You've tried apps before. <br class="hide-sm"><span style="color: #127A5E">This one replies for you.</span></h2>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; align-items: center">
+<a class="btn-k" href="https://wa.me/917094596877?text=Hi%2C%20I%27d%20like%20to%20check%20if%20my%20practice%20qualifies" target="_blank" rel="noopener" style="background: #0F201B; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px; padding: 14px 24px; border-radius: 10px; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px">Check if I qualify <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+<a class="lnk" href="https://calendly.com/harrish-simplireply/30min" target="_blank" rel="noopener" style="color: #3A4A45; font-size: 16px; padding: 12px 8px">Book a 30-min call</a>
+</div>
+</div>
+</section>
+
+</main>
+<!-- FOOTER -->
+<footer style="border-top: 1px solid #E4E2DD">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; font-size: 14px; color: #5A6B65">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MjYgODgiIHdpZHRoPSI2MjYiIGhlaWdodD0iODgiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0ic2ltcGxpcmVwbHkiPjx0aXRsZT5zaW1wbGlyZXBseTwvdGl0bGU+PGcgdHJhbnNmb3JtPSJzY2FsZSgxLjM3NSkiPjxwYXRoIGQ9Ik0xNCA2aDM2YTEwIDEwIDAgMCAxIDEwIDEwdjI0YTEwIDEwIDAgMCAxLTEwIDEwSDMwTDE3IDU5VjUwaC0zQTEwIDEwIDAgMCAxIDQgNDBWMTZBMTAgMTAgMCAwIDEgMTQgNnoiIGZpbGw9IiMxMjdBNUUiPjwvcGF0aD48cGF0aCBkPSJNNDQgMzh2LTJhOSA5IDAgMCAwLTktOUgxOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PC9wYXRoPjxwYXRoIGQ9Ik0yNiAxOWwtOCA4IDggOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PC9wYXRoPjxjaXJjbGUgY3g9IjQ2IiBjeT0iMTYiIHI9IjUiIGZpbGw9IiNGRjZCNEEiPjwvY2lyY2xlPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDYgNjQpIj48cGF0aCBkPSJNMjguMSAxLjVRMTcuOTAwMDAwMDAwMDAwMDAyIDEuNSAxMS42MjUwMDAwMDAwMDAwMDIgLTMuMTI1UTUuMzUwMDAwMDAwMDAwMDAwNSAtNy43NSA0LjAgLTE2LjJMMTcuOTAwMDAwMDAwMDAwMDAyIC0xOC4zUTE4Ljc1IC0xNC41IDIxLjY3NSAtMTIuMzUwMDAwMDAwMDAwMDAxUTI0LjYgLTEwLjIwMDAwMDAwMDAwMDAwMSAyOS4xIC0xMC4yMDAwMDAwMDAwMDAwMDFRMzIuODAwMDAwMDAwMDAwMDA0IC0xMC4yMDAwMDAwMDAwMDAwMDEgMzQuODAwMDAwMDAwMDAwMDA0IC0xMS42MjVRMzYuODAwMDAwMDAwMDAwMDA0IC0xMy4wNSAzNi44MDAwMDAwMDAwMDAwMDQgLTE1LjYwMDAwMDAwMDAwMDAwMVEzNi44MDAwMDAwMDAwMDAwMDQgLTE3LjIgMzYuMCAtMTguMTc1UTM1LjIgLTE5LjE1MDAwMDAwMDAwMDAwMiAzMi40MjUwMDAwMDAwMDAwMDQgLTIwLjFRMjkuNjUwMDAwMDAwMDAwMDAyIC0yMS4wNSAyMy44IC0yMi42UTE3LjIgLTI0LjMgMTMuMjUgLTI2LjRROS4zIC0yOC41IDcuNTUwMDAwMDAwMDAwMDAxIC0zMS40MjVRNS44MDAwMDAwMDAwMDAwMDEgLTM0LjM1IDUuODAwMDAwMDAwMDAwMDAxIC0zOC41UTUuODAwMDAwMDAwMDAwMDAxIC00My43IDguNDUwMDAwMDAwMDAwMDAxIC00Ny41MjUwMDAwMDAwMDAwMDZRMTEuMTAwMDAwMDAwMDAwMDAxIC01MS4zNSAxNS45MjUgLTUzLjQyNVEyMC43NSAtNTUuNSAyNy4zIC01NS41UTMzLjY1IC01NS41IDM4LjU1IC01My41NVE0My40NSAtNTEuNiA0Ni40NzUgLTQ4LjBRNDkuNSAtNDQuNDAwMDAwMDAwMDAwMDA2IDUwLjIgLTM5LjVMMzYuMzAwMDAwMDAwMDAwMDA0IC0zNy4wUTM1Ljk1IC00MC4wIDMzLjcgLTQxLjc1UTMxLjQ1MDAwMDAwMDAwMDAwMyAtNDMuNSAyNy42IC00My44MDAwMDAwMDAwMDAwMDRRMjMuODUgLTQ0LjA1MDAwMDAwMDAwMDAwNCAyMS41NzUwMDAwMDAwMDAwMDMgLTQyLjgwMDAwMDAwMDAwMDAwNFExOS4zIC00MS41NTAwMDAwMDAwMDAwMDQgMTkuMyAtMzkuMlExOS4zIC0zNy44MDAwMDAwMDAwMDAwMDQgMjAuMjc1IC0zNi44NVEyMS4yNSAtMzUuOSAyNC4zMjUwMDAwMDAwMDAwMDMgLTM0LjlRMjcuNDAwMDAwMDAwMDAwMDAyIC0zMy45IDMzLjcgLTMyLjMwMDAwMDAwMDAwMDAwNFEzOS44NSAtMzAuNzAwMDAwMDAwMDAwMDAzIDQzLjU3NSAtMjguNTc1MDAwMDAwMDAwMDAzUTQ3LjMwMDAwMDAwMDAwMDAwNCAtMjYuNDUwMDAwMDAwMDAwMDAzIDQ5LjAgLTIzLjQ3NVE1MC43IC0yMC41IDUwLjcgLTE2LjNRNTAuNyAtOC4wIDQ0LjcgLTMuMjVRMzguNyAxLjUgMjguMSAxLjVaTTU5LjcgLTYxLjVWLTczLjVINzMuMzAwMDAwMDAwMDAwMDFWLTYxLjVaTTU5LjcgMC4wVi01NC4wSDczLjMwMDAwMDAwMDAwMDAxVjAuMFpNMTUwLjMgMC4wVi0zMS45MDAwMDAwMDAwMDAwMDJRMTUwLjMgLTM3LjI1IDE0Ny43NzUgLTQwLjIyNVExNDUuMjUgLTQzLjIgMTQwLjggLTQzLjJRMTM3Ljk1MDAwMDAwMDAwMDAyIC00My4yIDEzNS44NTAwMDAwMDAwMDAwMiAtNDEuODc1UTEzMy43NSAtNDAuNTUwMDAwMDAwMDAwMDA0IDEzMi41NzUgLTM4LjE3NTAwMDAwMDAwMDAwNFExMzEuNCAtMzUuODAwMDAwMDAwMDAwMDA0IDEzMS40IC0zMi43VjAuMEgxMTcuODAwMDAwMDAwMDAwMDFWLTMxLjkwMDAwMDAwMDAwMDAwMlExMTcuODAwMDAwMDAwMDAwMDEgLTM3LjI1IDExNS4yNzUgLTQwLjIyNVExMTIuNzUwMDAwMDAwMDAwMDEgLTQzLjIgMTA4LjMwMDAwMDAwMDAwMDAxIC00My4yUTEwNC4wNTAwMDAwMDAwMDAwMSAtNDMuMiAxMDEuNDc1MDAwMDAwMDAwMDEgLTQwLjI3NTAwMDAwMDAwMDAwNlE5OC45IC0zNy4zNSA5OC45IC0zMi43VjAuMEg4NS4yMDAwMDAwMDAwMDAwMlYtNTQuMEg5Ny4yMDAwMDAwMDAwMDAwMlYtNDguMVE5OS41NTAwMDAwMDAwMDAwMSAtNTEuMCAxMDMuMDAwMDAwMDAwMDAwMDEgLTUyLjg1UTEwNy40NTAwMDAwMDAwMDAwMiAtNTUuMzAwMDAwMDAwMDAwMDA0IDExMy4wMDAwMDAwMDAwMDAwMSAtNTUuMzAwMDAwMDAwMDAwMDA0UTExOS4zNTAwMDAwMDAwMDAwMiAtNTUuMzAwMDAwMDAwMDAwMDA0IDEyMy40NTAwMDAwMDAwMDAwMiAtNTIuNlExMjYuODAwMDAwMDAwMDAwMDEgLTUwLjM1IDEyOC43MDAwMDAwMDAwMDAwMiAtNDYuOTAwMDAwMDAwMDAwMDA2UTEzMS4yNSAtNTAuNyAxMzUuNCAtNTIuOTVRMTM5LjggLTU1LjMwMDAwMDAwMDAwMDAwNCAxNDUuMjAwMDAwMDAwMDAwMDIgLTU1LjMwMDAwMDAwMDAwMDAwNFExNTQuNDUwMDAwMDAwMDAwMDIgLTU1LjMwMDAwMDAwMDAwMDAwNCAxNTkuMTc1IC00OS44MjVRMTYzLjkwMDAwMDAwMDAwMDAzIC00NC4zNSAxNjMuOTAwMDAwMDAwMDAwMDMgLTM1LjVWMC4wWk0yMDAuNDAwMDAwMDAwMDAwMDMgMS41UTE5Mi43NTAwMDAwMDAwMDAwMyAxLjUgMTg3LjUwMDAwMDAwMDAwMDAzIC0xLjkwMDAwMDAwMDAwMDAwMDFWMjQuMEgxNzMuODAwMDAwMDAwMDAwMDRWLTU0LjBIMTg1LjgwMDAwMDAwMDAwMDA0Vi01MS4wNTAwMDAwMDAwMDAwMDRRMTg2LjI1MDAwMDAwMDAwMDAzIC01MS40MDAwMDAwMDAwMDAwMDYgMTg2Ljc1MDAwMDAwMDAwMDAzIC01MS43NVExOTIuMDAwMDAwMDAwMDAwMDMgLTU1LjUgMTk5LjcwMDAwMDAwMDAwMDA1IC01NS41UTIwNy40NTAwMDAwMDAwMDAwNSAtNTUuNSAyMTMuMjAwMDAwMDAwMDAwMDUgLTUxLjhRMjE4Ljk1MDAwMDAwMDAwMDA1IC00OC4xIDIyMi4xMjUwMDAwMDAwMDAwNiAtNDEuNjc1UTIyNS4zMDAwMDAwMDAwMDAwNCAtMzUuMjUgMjI1LjMwMDAwMDAwMDAwMDA0IC0yNy4wUTIyNS4zMDAwMDAwMDAwMDAwNCAtMTguOTAwMDAwMDAwMDAwMDAyIDIyMi4xNzUwMDAwMDAwMDAwNCAtMTIuNDUwMDAwMDAwMDAwMDAxUTIxOS4wNTAwMDAwMDAwMDAwNCAtNi4wIDIxMy40NTAwMDAwMDAwMDAwNSAtMi4yNVEyMDcuODUwMDAwMDAwMDAwMDIgMS41IDIwMC40MDAwMDAwMDAwMDAwMyAxLjVaTTE5OC4yMDAwMDAwMDAwMDAwNSAtMTAuNjAwMDAwMDAwMDAwMDAxUTIwMi42MDAwMDAwMDAwMDAwMiAtMTAuNjAwMDAwMDAwMDAwMDAxIDIwNS40MDAwMDAwMDAwMDAwMyAtMTIuOFEyMDguMjAwMDAwMDAwMDAwMDUgLTE1LjAgMjA5LjU1MDAwMDAwMDAwMDA0IC0xOC43MjVRMjEwLjkwMDAwMDAwMDAwMDAzIC0yMi40NTAwMDAwMDAwMDAwMDMgMjEwLjkwMDAwMDAwMDAwMDAzIC0yNy4wUTIxMC45MDAwMDAwMDAwMDAwMyAtMzEuNSAyMDkuNTAwMDAwMDAwMDAwMDMgLTM1LjIyNVEyMDguMTAwMDAwMDAwMDAwMDIgLTM4Ljk1IDIwNS4xNzUgLTQxLjE3NTAwMDAwMDAwMDAwNFEyMDIuMjUwMDAwMDAwMDAwMDMgLTQzLjQwMDAwMDAwMDAwMDAwNiAxOTcuNzAwMDAwMDAwMDAwMDUgLTQzLjQwMDAwMDAwMDAwMDAwNlExOTMuNDUwMDAwMDAwMDAwMDUgLTQzLjQwMDAwMDAwMDAwMDAwNiAxOTAuODI1MDAwMDAwMDAwMDUgLTQxLjM1MDAwMDAwMDAwMDAxUTE4OC4yMDAwMDAwMDAwMDAwNSAtMzkuMzAwMDAwMDAwMDAwMDA0IDE4Ny4wMDAwMDAwMDAwMDAwNiAtMzUuNlExODUuODAwMDAwMDAwMDAwMDQgLTMxLjkwMDAwMDAwMDAwMDAwMiAxODUuODAwMDAwMDAwMDAwMDQgLTI3LjBRMTg1LjgwMDAwMDAwMDAwMDA0IC0yMi4xIDE4Ny4wMDAwMDAwMDAwMDAwNiAtMTguNDAwMDAwMDAwMDAwMDAyUTE4OC4yMDAwMDAwMDAwMDAwNSAtMTQuNzAwMDAwMDAwMDAwMDAxIDE5MC45MjUwMDAwMDAwMDAwNCAtMTIuNjUwMDAwMDAwMDAwMDAyUTE5My42NTAwMDAwMDAwMDAwMyAtMTAuNjAwMDAwMDAwMDAwMDAxIDE5OC4yMDAwMDAwMDAwMDAwNSAtMTAuNjAwMDAwMDAwMDAwMDAxWk0yMzQuMzAwMDAwMDAwMDAwMDQgMC4wVi03My41SDI0Ny45MDAwMDAwMDAwMDAwM1YwLjBaTTI2MC45MDAwMDAwMDAwMDAwMyAtNjEuNVYtNzMuNUgyNzQuNTAwMDAwMDAwMDAwMDZWLTYxLjVaTTI2MC45MDAwMDAwMDAwMDAwMyAwLjBWLTU0LjBIMjc0LjUwMDAwMDAwMDAwMDA2VjAuMFoiIGZpbGw9IiMwRjIwMUIiPjwvcGF0aD48cGF0aCBkPSJNMjg2LjUwMDAwMDAwMDAwMDA2IDAuMFYtNTQuMEgyOTguNTAwMDAwMDAwMDAwMDZWLTQ1LjMwMDAwMDAwMDAwMDAwNFEyOTkuMTUwMDAwMDAwMDAwMDMgLTQ2LjUgMzAwLjAwMDAwMDAwMDAwMDA2IC00Ny42UTMwMS43NTAwMDAwMDAwMDAwNiAtNDkuOTAwMDAwMDAwMDAwMDA2IDMwNC4zMDAwMDAwMDAwMDAwNyAtNTEuNDAwMDAwMDAwMDAwMDA2UTMwNi4yNTAwMDAwMDAwMDAwNiAtNTIuNiAzMDguNTUwMDAwMDAwMDAwMDcgLTUzLjI3NTAwMDAwMDAwMDAwNlEzMTAuODUwMDAwMDAwMDAwMSAtNTMuOTUgMzEzLjMwMDAwMDAwMDAwMDA3IC01NC4xMjVRMzE1Ljc1MDAwMDAwMDAwMDA2IC01NC4zMDAwMDAwMDAwMDAwMDQgMzE4LjIwMDAwMDAwMDAwMDA1IC01NC4wVi00MS4zMDAwMDAwMDAwMDAwMDRRMzE1Ljk1MDAwMDAwMDAwMDA1IC00Mi4wIDMxMi45NzUgLTQxLjc3NTAwMDAwMDAwMDAwNlEzMTAuMDAwMDAwMDAwMDAwMDYgLTQxLjU1MDAwMDAwMDAwMDAwNCAzMDcuNjAwMDAwMDAwMDAwMSAtNDAuNDAwMDAwMDAwMDAwMDA2UTMwNS4yMDAwMDAwMDAwMDAwNSAtMzkuMzAwMDAwMDAwMDAwMDA0IDMwMy41NTAwMDAwMDAwMDAwNyAtMzcuNDc1UTMwMS45MDAwMDAwMDAwMDAwMyAtMzUuNjUgMzAxLjA1MDAwMDAwMDAwMDA3IC0zMy4xNzVRMzAwLjIwMDAwMDAwMDAwMDA1IC0zMC43MDAwMDAwMDAwMDAwMDMgMzAwLjIwMDAwMDAwMDAwMDA1IC0yNy42VjAuMFpNMzQ5LjgwMDAwMDAwMDAwMDA3IDEuNVEzNDEuNTAwMDAwMDAwMDAwMDYgMS41IDMzNS4xNzUwMDAwMDAwMDAwNyAtMi4wNzVRMzI4Ljg1IC01LjY1IDMyNS4yNzUwMDAwMDAwMDAwMyAtMTEuOTI1UTMyMS43MDAwMDAwMDAwMDAwNSAtMTguMiAzMjEuNzAwMDAwMDAwMDAwMDUgLTI2LjNRMzIxLjcwMDAwMDAwMDAwMDA1IC0zNS4xNSAzMjUuMjAwMDAwMDAwMDAwMDUgLTQxLjdRMzI4LjcwMDAwMDAwMDAwMDA1IC00OC4yNSAzMzQuODUgLTUxLjg3NVEzNDEuMDAwMDAwMDAwMDAwMDYgLTU1LjUgMzQ5LjAwMDAwMDAwMDAwMDA2IC01NS41UTM1Ny41MDAwMDAwMDAwMDAwNiAtNTUuNSAzNjMuNDUwMDAwMDAwMDAwMDUgLTUxLjVRMzY5LjQwMDAwMDAwMDAwMDAzIC00Ny41IDM3Mi4yNSAtNDAuMjVRMzc1LjEgLTMzLjAgMzc0LjI1MDAwMDAwMDAwMDA2IC0yMy4yMDAwMDAwMDAwMDAwMDNIMzM2LjM1UTMzNy4wMDAwMDAwMDAwMDAwNiAtMTguMzUgMzM5LjQwMDAwMDAwMDAwMDAzIC0xNS4zNTAwMDAwMDAwMDAwMDFRMzQyLjY1MDAwMDAwMDAwMDAzIC0xMS4yMDAwMDAwMDAwMDAwMDEgMzQ5LjAwMDAwMDAwMDAwMDA2IC0xMS4yMDAwMDAwMDAwMDAwMDFRMzUzLjAwMDAwMDAwMDAwMDA2IC0xMS4yMDAwMDAwMDAwMDAwMDEgMzU1Ljg1IC0xMi45NTAwMDAwMDAwMDAwMDFRMzU4LjcwMDAwMDAwMDAwMDA1IC0xNC43MDAwMDAwMDAwMDAwMDEgMzYwLjIwMDAwMDAwMDAwMDA1IC0xOC4wTDM3My44MDAwMDAwMDAwMDAwNyAtMTQuMTAwMDAwMDAwMDAwMDAxUTM3MC43NTAwMDAwMDAwMDAwNiAtNi43IDM2NC4xNzUwMDAwMDAwMDAwNyAtMi42UTM1Ny42IDEuNSAzNDkuODAwMDAwMDAwMDAwMDcgMS41Wk0zNjAuNTAwMDAwMDAwMDAwMDYgLTMzLjMwMDAwMDAwMDAwMDAwNFEzNTkuOTAwMDAwMDAwMDAwMDMgLTM3LjcgMzU4LjIwMDAwMDAwMDAwMDA1IC00MC4xUTM1NS41NTAwMDAwMDAwMDAwNyAtNDMuNyAzNDkuNiAtNDMuN1EzNDIuNjUwMDAwMDAwMDAwMDMgLTQzLjcgMzM5LjQwMDAwMDAwMDAwMDAzIC0zOS41UTMzNy41MDAwMDAwMDAwMDAwNiAtMzcuMDUwMDAwMDAwMDAwMDA0IDMzNi43MDAwMDAwMDAwMDAwNSAtMzMuMzAwMDAwMDAwMDAwMDA0Wk00MDkuMDAwMDAwMDAwMDAwMDYgMS41UTQwMS4zNTAwMDAwMDAwMDAxIDEuNSAzOTYuMTAwMDAwMDAwMDAwMSAtMS45MDAwMDAwMDAwMDAwMDAxVjI0LjBIMzgyLjQwMDAwMDAwMDAwMDAzVi01NC4wSDM5NC40MDAwMDAwMDAwMDAwM1YtNTEuMDUwMDAwMDAwMDAwMDA0UTM5NC44NTAwMDAwMDAwMDAxIC01MS40MDAwMDAwMDAwMDAwMDYgMzk1LjM1MDAwMDAwMDAwMDEgLTUxLjc1UTQwMC42MDAwMDAwMDAwMDAxIC01NS41IDQwOC4zMDAwMDAwMDAwMDAwNyAtNTUuNVE0MTYuMDUwMDAwMDAwMDAwMDcgLTU1LjUgNDIxLjgwMDAwMDAwMDAwMDA3IC01MS44UTQyNy41NTAwMDAwMDAwMDAwNyAtNDguMSA0MzAuNzI1MDAwMDAwMDAwMSAtNDEuNjc1UTQzMy45MDAwMDAwMDAwMDAxIC0zNS4yNSA0MzMuOTAwMDAwMDAwMDAwMSAtMjcuMFE0MzMuOTAwMDAwMDAwMDAwMSAtMTguOTAwMDAwMDAwMDAwMDAyIDQzMC43NzUwMDAwMDAwMDAxIC0xMi40NTAwMDAwMDAwMDAwMDFRNDI3LjY1MDAwMDAwMDAwMDEgLTYuMCA0MjIuMDUwMDAwMDAwMDAwMDcgLTIuMjVRNDE2LjQ1MDAwMDAwMDAwMDA1IDEuNSA0MDkuMDAwMDAwMDAwMDAwMDYgMS41Wk00MDYuODAwMDAwMDAwMDAwMDcgLTEwLjYwMDAwMDAwMDAwMDAwMVE0MTEuMjAwMDAwMDAwMDAwMDUgLTEwLjYwMDAwMDAwMDAwMDAwMSA0MTQuMDAwMDAwMDAwMDAwMDYgLTEyLjhRNDE2LjgwMDAwMDAwMDAwMDA3IC0xNS4wIDQxOC4xNTAwMDAwMDAwMDAxIC0xOC43MjVRNDE5LjUwMDAwMDAwMDAwMDA2IC0yMi40NTAwMDAwMDAwMDAwMDMgNDE5LjUwMDAwMDAwMDAwMDA2IC0yNy4wUTQxOS41MDAwMDAwMDAwMDAwNiAtMzEuNSA0MTguMSAtMzUuMjI1UTQxNi43MDAwMDAwMDAwMDAwNSAtMzguOTUgNDEzLjc3NTAwMDAwMDAwMDEgLTQxLjE3NTAwMDAwMDAwMDAwNFE0MTAuODUwMDAwMDAwMDAwMSAtNDMuNDAwMDAwMDAwMDAwMDA2IDQwNi4zMDAwMDAwMDAwMDAwNyAtNDMuNDAwMDAwMDAwMDAwMDA2UTQwMi4wNTAwMDAwMDAwMDAwNyAtNDMuNDAwMDAwMDAwMDAwMDA2IDM5OS40MjUwMDAwMDAwMDAwNyAtNDEuMzUwMDAwMDAwMDAwMDFRMzk2LjgwMDAwMDAwMDAwMDA3IC0zOS4zMDAwMDAwMDAwMDAwMDQgMzk1LjYgLTM1LjZRMzk0LjQwMDAwMDAwMDAwMDAzIC0zMS45MDAwMDAwMDAwMDAwMDIgMzk0LjQwMDAwMDAwMDAwMDAzIC0yNy4wUTM5NC40MDAwMDAwMDAwMDAwMyAtMjIuMSAzOTUuNiAtMTguNDAwMDAwMDAwMDAwMDAyUTM5Ni44MDAwMDAwMDAwMDAwNyAtMTQuNzAwMDAwMDAwMDAwMDAxIDM5OS41MjUwMDAwMDAwMDAxIC0xMi42NTAwMDAwMDAwMDAwMDJRNDAyLjI1MDAwMDAwMDAwMDA2IC0xMC42MDAwMDAwMDAwMDAwMDEgNDA2LjgwMDAwMDAwMDAwMDA3IC0xMC42MDAwMDAwMDAwMDAwMDFaTTQ0Mi45MDAwMDAwMDAwMDAxIDAuMFYtNzMuNUg0NTYuNTAwMDAwMDAwMDAwMVYwLjBaTTQ3NS40MDAwMDAwMDAwMDAxIDI0LjAgNDg0LjMwMDAwMDAwMDAwMDEgLTAuNDUgNDYyLjUwMDAwMDAwMDAwMDEgLTU0LjBINDc2LjYwMDAwMDAwMDAwMDE0TDQ5MC44MDAwMDAwMDAwMDAxIC0xNy4yNUw1MDQuOTAwMDAwMDAwMDAwMSAtNTQuMEg1MTguNTAwMDAwMDAwMDAwMUw0ODguMDAwMDAwMDAwMDAwMSAyNC4wWiIgZmlsbD0iIzEyN0E1RSI+PC9wYXRoPjwvZz48L3N2Zz4=" alt="simplireply" style="height: 22px; width: auto">
+<span>Replies, made simple.</span>
+<div style="display: flex; gap: 20px; flex-wrap: wrap">
+<a href="mailto:harrish@simplireply.com" style="color: #3A4A45">harrish@simplireply.com</a>
+<span>Chennai, India</span>
+</div>
+</div>
+</footer>
+
+<!-- floating WhatsApp -->
+<a class="bob fab" href="https://wa.me/917094596877?text=Hi%2C%20I%27d%20like%20to%20check%20if%20my%20practice%20qualifies" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" style="position: fixed; right: 24px; bottom: 24px; width: 56px; height: 56px; border-radius: 9999px; background: #127A5E; box-shadow: 0 6px 20px #0F201B1F; display: flex; align-items: center; justify-content: center; z-index: 20"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></a>
+</div>
+
+<script>
+(function(){
+  var root=document.querySelector('.sr-root');
+  if(!root||!('IntersectionObserver' in window))return;
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  root.classList.add('anim-on');
+  var nums=[].slice.call(root.querySelectorAll('[data-count]'));
+  nums.forEach(function(n){n.textContent='0';});
+  function fmt(v,inr){return inr?v.toLocaleString('en-IN'):String(v);}
+  function countUp(){
+    var start=performance.now(),dur=2200;
+    (function step(now){
+      var x=Math.min(1,(now-start)/dur),t=1-Math.pow(1-x,3);
+      nums.forEach(function(n){n.textContent=fmt(Math.round(+n.dataset.count*t),n.dataset.inr);});
+      if(x<1)requestAnimationFrame(step);
+    })(start);
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(!en.isIntersecting)return;
+      en.target.classList.add('shown');io.unobserve(en.target);
+      if(en.target.classList.contains('report'))countUp();
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  [].slice.call(root.querySelectorAll('.reveal,.bar,.report')).forEach(function(e){
+    if(e.classList.contains('reveal')&&e.parentElement){
+      var sib=[].filter.call(e.parentElement.children,function(c){return c.classList.contains('reveal');});
+      e.style.transitionDelay=(Math.max(0,sib.indexOf(e))*0.14)+'s';
+    }
+    io.observe(e);
+  });
+})();
+</script>
+</body>
+</html>
